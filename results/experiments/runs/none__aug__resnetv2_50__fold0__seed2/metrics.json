@@ -1,0 +1,37 @@
+{
+ "run_id": "none__aug__resnetv2_50__fold0__seed2",
+ "mode": "cv",
+ "enhancement": "none",
+ "aug": "aug",
+ "arch": "resnetv2_50",
+ "fold": 0,
+ "seed": 2,
+ "batch_size": 64,
+ "best_val_macro_f1": 0.9498690164324839,
+ "val_metrics": {
+  "accuracy": 0.9548872180451128,
+  "macro_f1": 0.9498690164324839,
+  "per_class": {
+   "Endodontics": {
+    "precision": 0.9487179487179487,
+    "recall": 1.0,
+    "f1": 0.9736842105263158
+   },
+   "Healthy": {
+    "precision": 0.9583333333333334,
+    "recall": 0.8214285714285714,
+    "f1": 0.8846153846153846
+   },
+   "Impacted": {
+    "precision": 0.9142857142857143,
+    "recall": 0.9696969696969697,
+    "f1": 0.9411764705882353
+   },
+   "Implant": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   }
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+  "mode": "cv",
+  "enhancement": "none",
+  "aug": "aug",
+  "arch": "vgg16",
+  "fold": 4,
+  "seed": 1,
+  "run_id": "none__aug__vgg16__fold4__seed1",
+  "run_dir": "runs/none__aug__vgg16__fold4__seed1",
+  "batch": 32,
+  "lr": 0.0001,
+  "epochs": 150,
+  "patience": 20,
+  "workers": 6
+}

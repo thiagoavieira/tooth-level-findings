@@ -1,0 +1,49 @@
+{
+ "gt_impacted": {
+  "3rd molar": 130,
+  "2nd molar": 2,
+  "1st premolar": 1
+ },
+ "impacted_missed": {
+  "3rd molar": 2,
+  "1st premolar": 1
+ },
+ "sound_total": {
+  "central incisor": 1393,
+  "lateral incisor": 1473,
+  "canine": 1613,
+  "2nd molar": 528,
+  "3rd molar": 363,
+  "1st premolar": 1022,
+  "1st molar": 356,
+  "2nd premolar": 824
+ },
+ "sound_pred_impacted": {
+  "3rd molar": 147,
+  "2nd molar": 78,
+  "1st molar": 11,
+  "lateral incisor": 1
+ },
+ "sound_pred_endo": {
+  "canine": 18,
+  "1st premolar": 8,
+  "2nd premolar": 14,
+  "1st molar": 2,
+  "3rd molar": 3,
+  "2nd molar": 2,
+  "lateral incisor": 2
+ },
+ "sound_pred_implant": {
+  "2nd molar": 1
+ },
+ "sound_pred_impacted_rate": {
+  "central incisor": 0.0,
+  "lateral incisor": 0.0006788866259334691,
+  "canine": 0.0,
+  "2nd molar": 0.14772727272727273,
+  "3rd molar": 0.4049586776859504,
+  "1st premolar": 0.0,
+  "1st molar": 0.03089887640449438,
+  "2nd premolar": 0.0
+ }
+}

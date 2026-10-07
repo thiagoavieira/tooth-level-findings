@@ -1,0 +1,78 @@
+{
+ "tufts": {
+  "Endodontics": {
+   "Endodontics": 491.8,
+   "Healthy": 54.6,
+   "Impacted": 0.0,
+   "Implant": 0.0,
+   "Other": 1147.5,
+   "Exclude": 54.6,
+   "Bad crop": 62.4
+  },
+  "Healthy": {
+   "Endodontics": 0.0,
+   "Healthy": 12340.4,
+   "Impacted": 71.3,
+   "Implant": 0.0,
+   "Other": 2853.3,
+   "Exclude": 1141.3,
+   "Bad crop": 142.7
+  },
+  "Impacted": {
+   "Endodontics": 0.0,
+   "Healthy": 5.2,
+   "Impacted": 275.3,
+   "Implant": 0.0,
+   "Other": 0.0,
+   "Exclude": 16.5,
+   "Bad crop": 1.0
+  },
+  "Implant": {
+   "Endodontics": 12.1,
+   "Healthy": 11.1,
+   "Impacted": 0.0,
+   "Implant": 196.6,
+   "Other": 3.0,
+   "Exclude": 5.0,
+   "Bad crop": 22.2
+  }
+ },
+ "dentex": {
+  "Endodontics": {
+   "Endodontics": 1254.6,
+   "Healthy": 51.0,
+   "Impacted": 0.0,
+   "Implant": 0.0,
+   "Other": 1142.4,
+   "Exclude": 61.2,
+   "Bad crop": 40.8
+  },
+  "Healthy": {
+   "Endodontics": 0.0,
+   "Healthy": 17191.6,
+   "Impacted": 82.7,
+   "Implant": 0.0,
+   "Other": 1735.7,
+   "Exclude": 1157.1,
+   "Bad crop": 495.9
+  },
+  "Impacted": {
+   "Endodontics": 0.0,
+   "Healthy": 16.3,
+   "Impacted": 372.3,
+   "Implant": 0.0,
+   "Other": 3.1,
+   "Exclude": 12.2,
+   "Bad crop": 4.1
+  },
+  "Implant": {
+   "Endodontics": 10.0,
+   "Healthy": 69.0,
+   "Impacted": 0.0,
+   "Implant": 74.0,
+   "Other": 12.0,
+   "Exclude": 12.0,
+   "Bad crop": 7.0
+  }
+ }
+}

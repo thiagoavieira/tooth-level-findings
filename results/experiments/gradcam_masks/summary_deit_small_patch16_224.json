@@ -1,0 +1,112 @@
+{
+ "arch": "deit_small_patch16_224",
+ "n_rows": 5475,
+ "n_teeth_no_mask": 203,
+ "all": {
+  "n": 5475,
+  "mask_area_frac": 0.6120356712328767,
+  "mass_inside": 0.5060082191780823,
+  "iou_top20": 0.34617389954337896,
+  "pointing": 0.5232876712328767
+ },
+ "correct": {
+  "n": 5328,
+  "mask_area_frac": 0.6136240990990991,
+  "mass_inside": 0.5089153716216216,
+  "iou_top20": 0.34613115615615614,
+  "pointing": 0.5260885885885885
+ },
+ "incorrect": {
+  "n": 147,
+  "mask_area_frac": 0.5544632653061224,
+  "mass_inside": 0.4006387755102041,
+  "iou_top20": 0.34772312925170074,
+  "pointing": 0.4217687074829932
+ },
+ "per_class": {
+  "Endodontics": {
+   "n": 2469,
+   "mask_area_frac": 0.6201595382746051,
+   "mass_inside": 0.6277763466990685,
+   "iou_top20": 0.3199183070068854,
+   "pointing": 0.6929931146213042
+  },
+  "Healthy": {
+   "n": 2721,
+   "mask_area_frac": 0.6103951488423374,
+   "mass_inside": 0.4109975744211687,
+   "iou_top20": 0.3576979051819184,
+   "pointing": 0.384417493568541
+  },
+  "Impacted": {
+   "n": 255,
+   "mask_area_frac": 0.5523105882352941,
+   "mass_inside": 0.31960666666666665,
+   "iou_top20": 0.46847921568627454,
+   "pointing": 0.3411764705882353
+  },
+  "Implant": {
+   "n": 30,
+   "mask_area_frac": 0.5999,
+   "mass_inside": 0.6863699999999999,
+   "iou_top20": 0.42218666666666665,
+   "pointing": 0.7
+  }
+ },
+ "per_class_correct": {
+  "Endodontics": {
+   "n": 2405,
+   "mask_area_frac": 0.6205631600831601,
+   "mass_inside": 0.6328434095634097,
+   "iou_top20": 0.31866972972972973,
+   "pointing": 0.6968814968814969
+  },
+  "Healthy": {
+   "n": 2648,
+   "mask_area_frac": 0.6134641616314199,
+   "mass_inside": 0.4126261706948641,
+   "iou_top20": 0.3586055891238671,
+   "pointing": 0.3867069486404834
+  },
+  "Impacted": {
+   "n": 245,
+   "mask_area_frac": 0.5489171428571428,
+   "mass_inside": 0.31137755102040815,
+   "iou_top20": 0.4715628571428572,
+   "pointing": 0.3346938775510204
+  },
+  "Implant": {
+   "n": 30,
+   "mask_area_frac": 0.5999,
+   "mass_inside": 0.6863699999999999,
+   "iou_top20": 0.42218666666666665,
+   "pointing": 0.7
+  }
+ },
+ "per_class_incorrect": {
+  "Endodontics": {
+   "n": 64,
+   "mask_area_frac": 0.6049921875,
+   "mass_inside": 0.437365625,
+   "iou_top20": 0.3668375,
+   "pointing": 0.546875
+  },
+  "Healthy": {
+   "n": 73,
+   "mask_area_frac": 0.4990698630136986,
+   "mass_inside": 0.35192191780821913,
+   "iou_top20": 0.324772602739726,
+   "pointing": 0.3013698630136986
+  },
+  "Impacted": {
+   "n": 10,
+   "mask_area_frac": 0.63545,
+   "mass_inside": 0.5212199999999999,
+   "iou_top20": 0.39293000000000006,
+   "pointing": 0.5
+  },
+  "Implant": {
+   "n": 0
+  }
+ }
+}

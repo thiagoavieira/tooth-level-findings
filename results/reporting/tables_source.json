@@ -1,0 +1,65 @@
+{
+ "tab_class_distribution": [
+  "splits/split_manifest.csv"
+ ],
+ "tab_cv_ablation": [
+  "aggregates/cv_summary.csv",
+  "aggregates/test_summary.csv",
+  "stats/friedman.json"
+ ],
+ "tab_dentex_impacted": [
+  "dentex/dentex_impacted_eval.json"
+ ],
+ "tab_fp_by_tooth": [
+  "prevalence/fp_by_tooth_type.json"
+ ],
+ "tab_inference_cost": [
+  "cost/inference_cost.csv",
+  "aggregates/test_summary.csv"
+ ],
+ "tab_mitigation": [
+  "inception_v3__paper_s1.0/metrics.json",
+  "deit_small_patch16_224__paper_s1.0/metrics.json",
+  "inception_v3__paper_s1.0_prior/metrics.json",
+  "inception_v3__paper_s1.3/metrics.json",
+  "inception_v3__paper_s1.3_prior/metrics.json",
+  "deit_small_patch16_224__paper_s1.0_prior/metrics.json",
+  "deit_small_patch16_224__paper_s1.3/metrics.json",
+  "deit_small_patch16_224__paper_s1.3_prior/metrics.json",
+  "inception_v3__posneg_s1.0/metrics.json",
+  "inception_v3__posneg_s1.0_prior/metrics.json",
+  "deit_small_patch16_224__posneg_s1.0/metrics.json",
+  "deit_small_patch16_224__posneg_s1.0_prior/metrics.json",
+  "inception_v3__ctx13_s1.3/metrics.json",
+  "deit_small_patch16_224__ctx13_s1.3/metrics.json",
+  "deit_small_patch16_224__posneg_ctx13_s1.3/metrics.json",
+  "deit_small_patch16_224__posneg_ctx13_s1.3_prior/metrics.json"
+ ],
+ "tab_modern_backbones": [
+  "aggregates/cv_summary.csv",
+  "aggregates/test_summary.csv",
+  "stats/new_backbones.json",
+  "cost/inference_cost.csv"
+ ],
+ "tab_operating": [
+  "prevalence/operating_point.json"
+ ],
+ "tab_prevalence": [
+  "inception_v3__paper_s1.0/metrics.json",
+  "prevalence/summary.json",
+  "aggregates/test_summary.csv"
+ ],
+ "tab_robustness": [
+  "robustness/jitter_inception_v3.csv",
+  "robustness/end2end_inception_v3.json",
+  "splits/split_manifest.csv"
+ ],
+ "tab_test_per_class": [
+  "inception_v3__paper_s1.0/metrics.json",
+  "aggregates/test_summary.csv",
+  "none__noaug__inception_v3__seed0/predictions.csv",
+  "none__noaug__inception_v3__seed1/predictions.csv",
+  "none__noaug__inception_v3__seed2/predictions.csv",
+  "iei_external/bootstrap_test_ci.json"
+ ]
+}

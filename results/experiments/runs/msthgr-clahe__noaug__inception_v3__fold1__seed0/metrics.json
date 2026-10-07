@@ -1,0 +1,37 @@
+{
+ "run_id": "msthgr-clahe__noaug__inception_v3__fold1__seed0",
+ "mode": "cv",
+ "enhancement": "msthgr-clahe",
+ "aug": "noaug",
+ "arch": "inception_v3",
+ "fold": 1,
+ "seed": 0,
+ "batch_size": 32,
+ "best_val_macro_f1": 0.9780729108660949,
+ "val_metrics": {
+  "accuracy": 0.9784172661870504,
+  "macro_f1": 0.9780729108660949,
+  "per_class": {
+   "Endodontics": {
+    "precision": 1.0,
+    "recall": 0.9523809523809523,
+    "f1": 0.975609756097561
+   },
+   "Healthy": {
+    "precision": 0.9722222222222222,
+    "recall": 0.9459459459459459,
+    "f1": 0.958904109589041
+   },
+   "Impacted": {
+    "precision": 0.9565217391304348,
+    "recall": 1.0,
+    "f1": 0.9777777777777777
+   },
+   "Implant": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   }
+  }
+ }
+}

@@ -1,0 +1,188 @@
+{
+ "tufts": {
+  "tau_study": 0.99,
+  "estimated_true_impacted": 1011.37672323753,
+  "where_they_are": {
+   "predicted impacted, score < tau": {
+    "estimated": 659.1020408163266,
+    "share": 0.6516879671765308,
+    "reviewed_crops": 22
+   },
+   "predicted impacted, score >= tau": {
+    "estimated": 275.314878892735,
+    "share": 0.2722179308333509,
+    "reviewed_crops": 267
+   },
+   "predicted Healthy": {
+    "estimated": 76.95980352846833,
+    "share": 0.07609410199011837,
+    "reviewed_crops": 2
+   }
+  },
+  "below_tau_sample": {
+   "reviewed": 49,
+   "labelled_impacted": 22,
+   "stratum_size": 1468,
+   "weight_per_crop": 29.959183673469386
+  },
+  "uncovered_stratum": 0,
+  "curve": {
+   "0.5": {
+    "sensitivity": 0.9239058980098818,
+    "sensitivity_ci95": [
+     0.8016990522390463,
+     1.0
+    ],
+    "precision": 0.5574872648939974,
+    "flags_per_radiograph": 0.7417055292705321
+   },
+   "0.7": {
+    "sensitivity": 0.8350393570312638,
+    "sensitivity_ci95": [
+     0.6969273848303034,
+     0.9665503671045585
+    ],
+    "precision": 0.6135274880021347,
+    "flags_per_radiograph": 0.5319912435562464
+   },
+   "0.8": {
+    "sensitivity": 0.775794996378852,
+    "sensitivity_ci95": [
+     0.6481896812128483,
+     0.9409399477434197
+    ],
+    "precision": 0.6556125143368914,
+    "flags_per_radiograph": 0.41215450886236876
+   },
+   "0.9": {
+    "sensitivity": 0.6869284554002343,
+    "sensitivity_ci95": [
+     0.5415035595631318,
+     0.8411744355624788
+    ],
+    "precision": 0.7258823204772906,
+    "flags_per_radiograph": 0.2623585904950217
+   },
+   "0.95": {
+    "sensitivity": 0.5980619144216166,
+    "sensitivity_ci95": [
+     0.4427849820591442,
+     0.7933278113625425
+    ],
+    "precision": 0.8093066753793886,
+    "flags_per_radiograph": 0.142521855801144
+   },
+   "0.97": {
+    "sensitivity": 0.47957319311679214,
+    "sensitivity_ci95": [
+     0.353708097718805,
+     0.6439556490689949
+    ],
+    "precision": 0.8544772080874365,
+    "flags_per_radiograph": 0.08260348845420516
+   },
+   "0.99": {
+    "sensitivity": 0.2722179308333505,
+    "sensitivity_ci95": [
+     0.1940651970686944,
+     0.4167113399491144
+    ],
+    "precision": 0.9238754325259518,
+    "flags_per_radiograph": 0.02268512110726644
+   }
+  }
+ },
+ "dentex": {
+  "tau_study": 0.99,
+  "estimated_true_impacted": 1110.451999999999,
+  "where_they_are": {
+   "predicted impacted, score < tau": {
+    "estimated": 655.5,
+    "share": 0.5903001660585064,
+    "reviewed_crops": 23
+   },
+   "predicted impacted, score >= tau": {
+    "estimated": 372.29999999999905,
+    "share": 0.3352688815005055,
+    "reviewed_crops": 365
+   },
+   "predicted Healthy": {
+    "estimated": 82.652,
+    "share": 0.07443095244098806,
+    "reviewed_crops": 1
+   }
+  },
+  "below_tau_sample": {
+   "reviewed": 50,
+   "labelled_impacted": 23,
+   "stratum_size": 1425,
+   "weight_per_crop": 28.5
+  },
+  "uncovered_stratum": 0,
+  "curve": {
+   "0.5": {
+    "sensitivity": 0.9255690475590117,
+    "sensitivity_ci95": [
+     0.768254465432508,
+     1.0
+    ],
+    "precision": 0.5787162162162154,
+    "flags_per_radiograph": 0.7012183692596059
+   },
+   "0.7": {
+    "sensitivity": 0.7715776998915748,
+    "sensitivity_ci95": [
+     0.6117064015932546,
+     0.9188481893223267
+    ],
+    "precision": 0.649090909090908,
+    "flags_per_radiograph": 0.43411433926897824
+   },
+   "0.8": {
+    "sensitivity": 0.7202472506690958,
+    "sensitivity_ci95": [
+     0.5584249041715099,
+     0.8770601702613328
+    ],
+    "precision": 0.6631840796019888,
+    "flags_per_radiograph": 0.3806935332708529
+   },
+   "0.9": {
+    "sensitivity": 0.6432515768353773,
+    "sensitivity_ci95": [
+     0.514278318810996,
+     0.8137370615021012
+    ],
+    "precision": 0.6716502115655838,
+    "flags_per_radiograph": 0.3272727272727274
+   },
+   "0.95": {
+    "sensitivity": 0.566255903001659,
+    "sensitivity_ci95": [
+     0.4303240816811671,
+     0.7191755205446704
+    ],
+    "precision": 0.7526032315978441,
+    "flags_per_radiograph": 0.19372071227741347
+   },
+   "0.97": {
+    "sensitivity": 0.48926022916794165,
+    "sensitivity_ci95": [
+     0.3662274145998057,
+     0.6492323100007537
+    ],
+    "precision": 0.8176072234762971,
+    "flags_per_radiograph": 0.11358950328022492
+   },
+   "0.99": {
+    "sensitivity": 0.33526888150050654,
+    "sensitivity_ci95": [
+     0.246022959279565,
+     0.46752031950672635
+    ],
+    "precision": 0.9124999999999999,
+    "flags_per_radiograph": 0.03345829428303655
+   }
+  }
+ }
+}

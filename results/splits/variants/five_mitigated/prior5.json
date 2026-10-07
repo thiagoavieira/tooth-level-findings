@@ -1,0 +1,99 @@
+{
+ "classes": [
+  "Endodontics",
+  "Healthy",
+  "Impacted",
+  "Implant",
+  "Restored"
+ ],
+ "n_patients": 195,
+ "prior": {
+  "incisor": [
+   0.05240174672489083,
+   0.74235807860262,
+   0.000727802037845706,
+   0.010189228529839884,
+   0.1943231441048035
+  ],
+  "canine": [
+   0.04190751445086705,
+   0.7991329479768786,
+   0.004335260115606936,
+   0.008670520231213872,
+   0.14595375722543352
+  ],
+  "premolar": [
+   0.08136882129277566,
+   0.5825095057034221,
+   0.0007604562737642585,
+   0.01977186311787072,
+   0.3155893536121673
+  ],
+  "1st molar": [
+   0.13157894736842105,
+   0.28125,
+   0.001644736842105263,
+   0.04111842105263158,
+   0.5444078947368421
+  ],
+  "2nd molar": [
+   0.07401574803149606,
+   0.38110236220472443,
+   0.0015748031496062992,
+   0.012598425196850394,
+   0.5307086614173229
+  ],
+  "3rd molar": [
+   0.019753086419753086,
+   0.345679012345679,
+   0.4469135802469136,
+   0.0049382716049382715,
+   0.18271604938271604
+  ]
+ },
+ "counts": {
+  "incisor": {
+   "Endodontics": 71,
+   "Healthy": 1019,
+   "Impacted": 0,
+   "Implant": 13,
+   "Restored": 266
+  },
+  "canine": {
+   "Endodontics": 28,
+   "Healthy": 552,
+   "Impacted": 2,
+   "Implant": 5,
+   "Restored": 100
+  },
+  "premolar": {
+   "Endodontics": 106,
+   "Healthy": 765,
+   "Impacted": 0,
+   "Implant": 25,
+   "Restored": 414
+  },
+  "1st molar": {
+   "Endodontics": 79,
+   "Healthy": 170,
+   "Impacted": 0,
+   "Implant": 24,
+   "Restored": 330
+  },
+  "2nd molar": {
+   "Endodontics": 46,
+   "Healthy": 241,
+   "Impacted": 0,
+   "Implant": 7,
+   "Restored": 336
+  },
+  "3rd molar": {
+   "Endodontics": 7,
+   "Healthy": 139,
+   "Impacted": 180,
+   "Implant": 1,
+   "Restored": 73
+  }
+ },
+ "source": "lyria patients of splits_clean5/train_pool.csv"
+}

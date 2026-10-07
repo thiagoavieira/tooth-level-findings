@@ -1,0 +1,170 @@
+{
+ "tufts": {
+  "all7": {
+   "n": 508,
+   "raw_agreement": 0.8700787401574803,
+   "cohen_kappa": 0.8386921400426267,
+   "pabak": 0.8484251968503936,
+   "gwet_ac1": 0.8499465181607021,
+   "positive_specific_agreement": {
+    "Endodontics": 0.891566265060241,
+    "Healthy": 0.84,
+    "Impacted": 0.974169741697417,
+    "Implant": 0.9878048780487805,
+    "Other": 0.8193832599118943,
+    "Exclude": 0.24242424242424243,
+    "Bad crop": 0.5789473684210527
+   },
+   "marginals_reader1": {
+    "Endodontics": 46,
+    "Healthy": 107,
+    "Impacted": 133,
+    "Implant": 82,
+    "Other": 111,
+    "Exclude": 15,
+    "Bad crop": 14
+   },
+   "marginals_reader2": {
+    "Endodontics": 37,
+    "Healthy": 93,
+    "Impacted": 138,
+    "Implant": 82,
+    "Other": 116,
+    "Exclude": 18,
+    "Bad crop": 24
+   },
+   "ci95": {
+    "raw_agreement": [
+     0.8372549019607843,
+     0.9011633651990073
+    ],
+    "cohen_kappa": [
+     0.7984023857745557,
+     0.8762540988548078
+    ],
+    "pabak": [
+     0.8101307189542485,
+     0.8846905927321751
+    ],
+    "gwet_ac1": [
+     0.8121588005129654,
+     0.885972712232705
+    ]
+   }
+  },
+  "clinical4": {
+   "n": 337,
+   "raw_agreement": 0.9910979228486647,
+   "cohen_kappa": 0.9874506591196842,
+   "pabak": 0.9881305637982196,
+   "gwet_ac1": 0.9883412743106341,
+   "positive_specific_agreement": {
+    "Endodontics": 1.0,
+    "Healthy": 0.9824561403508771,
+    "Impacted": 0.9924812030075187,
+    "Implant": 0.9938650306748467
+   },
+   "marginals_reader1": {
+    "Endodontics": 37,
+    "Healthy": 87,
+    "Impacted": 132,
+    "Implant": 81
+   },
+   "marginals_reader2": {
+    "Endodontics": 37,
+    "Healthy": 84,
+    "Impacted": 134,
+    "Implant": 82
+   },
+   "ci95": {
+    "raw_agreement": [
+     0.9794721407624634,
+     1.0
+    ],
+    "cohen_kappa": [
+     0.9712543259022994,
+     1.0
+    ],
+    "pabak": [
+     0.9726295210166178,
+     1.0
+    ],
+    "gwet_ac1": [
+     0.9730188591132566,
+     1.0
+    ]
+   }
+  },
+  "finding_vs_sound": {
+   "n": 337,
+   "raw_agreement": 0.9910979228486647,
+   "cohen_kappa": 0.9764943851572854,
+   "pabak": 0.9821958456973294,
+   "gwet_ac1": 0.9856722763507529,
+   "positive_specific_agreement": {
+    "Sound": 0.9824561403508771,
+    "Finding": 0.9940357852882704
+   },
+   "marginals_reader1": {
+    "Sound": 87,
+    "Finding": 250
+   },
+   "marginals_reader2": {
+    "Sound": 84,
+    "Finding": 253
+   },
+   "ci95": {
+    "raw_agreement": [
+     0.9794721407624634,
+     1.0
+    ],
+    "cohen_kappa": [
+     0.9469351365476084,
+     1.0
+    ],
+    "pabak": [
+     0.9589442815249267,
+     1.0
+    ],
+    "gwet_ac1": [
+     0.9669281302604363,
+     1.0
+    ]
+   }
+  },
+  "confusion_readers": {
+   "Impacted|Impacted": 132,
+   "Other|Other": 93,
+   "Healthy|Healthy": 84,
+   "Implant|Implant": 81,
+   "Endodontics|Endodontics": 37,
+   "Healthy|Other": 12,
+   "Bad crop|Bad crop": 11,
+   "Other|Healthy": 7,
+   "Other|Bad crop": 6,
+   "Healthy|Exclude": 6,
+   "Endodontics|Other": 6,
+   "Other|Exclude": 5,
+   "Exclude|Exclude": 4,
+   "Exclude|Impacted": 4,
+   "Exclude|Other": 3,
+   "Healthy|Bad crop": 2,
+   "Healthy|Impacted": 2,
+   "Endodontics|Bad crop": 2,
+   "Bad crop|Other": 2,
+   "Exclude|Healthy": 2,
+   "Exclude|Bad crop": 2,
+   "Implant|Bad crop": 1,
+   "Bad crop|Exclude": 1,
+   "Impacted|Exclude": 1,
+   "Endodontics|Exclude": 1,
+   "Healthy|Implant": 1
+  },
+  "model_confidence": {
+   "mean_prob_when_readers_agree": 0.9112289592760181,
+   "mean_prob_when_readers_disagree": 0.7913303030303029,
+   "n_agree": 442,
+   "n_disagree": 66
+  }
+ }
+}

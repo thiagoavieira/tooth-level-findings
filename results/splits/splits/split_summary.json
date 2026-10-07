@@ -1,0 +1,27 @@
+{
+ "n_train_per_class": 180,
+ "folds": 5,
+ "seed": 0,
+ "train_pool": {
+  "Healthy": 180,
+  "Impacted": 180,
+  "Endodontics": 180,
+  "Implant": 180
+ },
+ "test": {
+  "Impacted": 133,
+  "Healthy": 965,
+  "Endodontics": 912,
+  "Implant": 55
+ },
+ "train_patients": 315,
+ "test_patients": 623,
+ "total_test_crops": 2065,
+ "fold_val_sizes": {
+  "0": 133,
+  "1": 139,
+  "2": 161,
+  "3": 154,
+  "4": 133
+ }
+}

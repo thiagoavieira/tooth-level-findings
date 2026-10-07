@@ -1,0 +1,932 @@
+{
+ "experiment": "E1-restored + E2-LODO",
+ "date": "2026-09-07",
+ "question": "A classe restaurado reduz a confusao endodontia<->restauracao sem degradar as demais?",
+ "protocol": {
+  "arch": "deit_small_patch16_224",
+  "enhancement": "none",
+  "aug": "noaug",
+  "cv": "StratifiedGroupKFold 5 folds x 3 seeds",
+  "test_seeds": 3,
+  "seed": 0,
+  "optimizer": "Adam 1e-4, plateau scheduler, early stopping on val macro-F1"
+ },
+ "datasets": {
+  "InReDD": {
+   "restoration_label": "codigo de estado R (nativo)",
+   "blocks": 7296,
+   "patients": 737,
+   "used_for": "treino da classe Restored, teto de 1300 com diversidade de paciente"
+  },
+  "DENTEX": {
+   "restoration_label": null,
+   "native_categories": [
+    "Impacted",
+    "Caries",
+    "Periapical Lesion",
+    "Deep Caries"
+   ],
+   "used_for": "validacao externa via auditoria de especialistas"
+  },
+  "Tufts": {
+   "restoration_label": null,
+   "native": "descricao livre por imagem, 3 mencoes de 'restor' em 1000",
+   "used_for": "validacao externa via auditoria de especialistas"
+  }
+ },
+ "design_rationale": "Apenas o InReDD anota restauracao de forma sistematica. Os 478 recortes restaurados de Tufts e DENTEX vieram da auditoria, que amostrou as predicoes do modelo anterior, logo sao uma amostra enviesada e servem para validar, nao para treinar.",
+ "splits": {
+  "splits_clean4": {
+   "train_sources": [
+    "lyria"
+   ],
+   "test_sources": [
+    "lyria"
+   ],
+   "classes": [
+    "Endodontics",
+    "Healthy",
+    "Impacted",
+    "Implant"
+   ],
+   "cap": 180,
+   "class_caps": {},
+   "seed": 0,
+   "fill": {
+    "class": "Implant",
+    "sources": [
+     "dentex",
+     "tufts"
+    ]
+   },
+   "below_cap": {},
+   "train_pool": {
+    "Endodontics": 180,
+    "Implant": 180,
+    "Healthy": 180,
+    "Impacted": 180
+   },
+   "train_pool_by_source": {
+    "dentex|Implant": 29,
+    "lyria|Endodontics": 180,
+    "lyria|Healthy": 180,
+    "lyria|Impacted": 180,
+    "lyria|Implant": 43,
+    "tufts|Implant": 108
+   },
+   "test": {
+    "Impacted": 133,
+    "Endodontics": 913,
+    "Implant": 18,
+    "Healthy": 982
+   },
+   "test_by_source": {
+    "lyria": 2046
+   },
+   "train_groups": 255,
+   "test_groups": 597,
+   "frozen_excluded": 133,
+   "fold_val_sizes": {
+    "0": 150,
+    "1": 138,
+    "2": 132,
+    "3": 153,
+    "4": 147
+   }
+  },
+  "splits_clean5": {
+   "train_sources": [
+    "lyria"
+   ],
+   "test_sources": [
+    "lyria"
+   ],
+   "classes": [
+    "Endodontics",
+    "Healthy",
+    "Impacted",
+    "Implant",
+    "Restored"
+   ],
+   "cap": 180,
+   "seed": 0,
+   "fill": {
+    "class": "Implant",
+    "sources": [
+     "dentex",
+     "tufts"
+    ]
+   },
+   "below_cap": {},
+   "train_pool": {
+    "Healthy": 180,
+    "Impacted": 180,
+    "Implant": 180,
+    "Restored": 180,
+    "Endodontics": 180
+   },
+   "train_pool_by_source": {
+    "dentex|Implant": 30,
+    "lyria|Endodontics": 180,
+    "lyria|Healthy": 180,
+    "lyria|Impacted": 180,
+    "lyria|Implant": 43,
+    "lyria|Restored": 180,
+    "tufts|Implant": 107
+   },
+   "test": {
+    "Impacted": 133,
+    "Endodontics": 914,
+    "Implant": 18,
+    "Healthy": 983,
+    "Restored": 969
+   },
+   "test_by_source": {
+    "lyria": 3017
+   },
+   "train_groups": 267,
+   "test_groups": 606,
+   "frozen_excluded": 162,
+   "fold_val_sizes": {
+    "0": 179,
+    "1": 178,
+    "2": 196,
+    "3": 181,
+    "4": 166
+   }
+  },
+  "splits_lodo_lyria": {
+   "train_sources": [
+    "lyria"
+   ],
+   "test_sources": [
+    "dentex",
+    "tufts"
+   ],
+   "classes": [
+    "Endodontics",
+    "Healthy",
+    "Impacted",
+    "Implant",
+    "Restored"
+   ],
+   "cap": 180,
+   "class_caps": {
+    "Implant": 93
+   },
+   "seed": 0,
+   "fill": null,
+   "below_cap": {},
+   "train_pool": {
+    "Impacted": 180,
+    "Endodontics": 180,
+    "Healthy": 180,
+    "Implant": 93,
+    "Restored": 180
+   },
+   "train_pool_by_source": {
+    "lyria|Endodontics": 180,
+    "lyria|Healthy": 180,
+    "lyria|Impacted": 180,
+    "lyria|Implant": 93,
+    "lyria|Restored": 180
+   },
+   "test": {
+    "Restored": 449,
+    "Implant": 217,
+    "Impacted": 647,
+    "Healthy": 605,
+    "Endodontics": 203
+   },
+   "test_by_source": {
+    "tufts": 1005,
+    "dentex": 1116
+   },
+   "train_groups": 473,
+   "test_groups": 1160,
+   "frozen_excluded": 162,
+   "fold_val_sizes": {
+    "0": 169,
+    "1": 167,
+    "2": 153,
+    "3": 162,
+    "4": 162
+   }
+  },
+  "splits_lodo_dentex": {
+   "train_sources": [
+    "lyria",
+    "tufts"
+   ],
+   "test_sources": [
+    "dentex"
+   ],
+   "classes": [
+    "Endodontics",
+    "Healthy",
+    "Impacted",
+    "Implant",
+    "Restored"
+   ],
+   "cap": 180,
+   "class_caps": {
+    "Implant": 93
+   },
+   "seed": 0,
+   "fill": null,
+   "below_cap": {},
+   "train_pool": {
+    "Healthy": 180,
+    "Implant": 93,
+    "Impacted": 180,
+    "Restored": 180,
+    "Endodontics": 180
+   },
+   "train_pool_by_source": {
+    "lyria|Endodontics": 171,
+    "lyria|Healthy": 149,
+    "lyria|Impacted": 99,
+    "lyria|Implant": 37,
+    "lyria|Restored": 155,
+    "tufts|Endodontics": 9,
+    "tufts|Healthy": 31,
+    "tufts|Impacted": 81,
+    "tufts|Implant": 56,
+    "tufts|Restored": 25
+   },
+   "test": {
+    "Impacted": 368,
+    "Restored": 201,
+    "Healthy": 365,
+    "Endodontics": 128,
+    "Implant": 54
+   },
+   "test_by_source": {
+    "dentex": 1116
+   },
+   "train_groups": 581,
+   "test_groups": 619,
+   "frozen_excluded": 162,
+   "fold_val_sizes": {
+    "0": 169,
+    "1": 172,
+    "2": 163,
+    "3": 163,
+    "4": 146
+   }
+  },
+  "splits_lodo_tufts": {
+   "train_sources": [
+    "dentex",
+    "lyria"
+   ],
+   "test_sources": [
+    "tufts"
+   ],
+   "classes": [
+    "Endodontics",
+    "Healthy",
+    "Impacted",
+    "Implant",
+    "Restored"
+   ],
+   "cap": 180,
+   "class_caps": {
+    "Implant": 93
+   },
+   "seed": 0,
+   "fill": null,
+   "below_cap": {},
+   "train_pool": {
+    "Endodontics": 180,
+    "Healthy": 180,
+    "Impacted": 180,
+    "Restored": 180,
+    "Implant": 93
+   },
+   "train_pool_by_source": {
+    "dentex|Endodontics": 13,
+    "dentex|Healthy": 37,
+    "dentex|Impacted": 100,
+    "dentex|Implant": 28,
+    "dentex|Restored": 16,
+    "lyria|Endodontics": 167,
+    "lyria|Healthy": 143,
+    "lyria|Impacted": 80,
+    "lyria|Implant": 65,
+    "lyria|Restored": 164
+   },
+   "test": {
+    "Restored": 248,
+    "Implant": 163,
+    "Impacted": 279,
+    "Healthy": 240,
+    "Endodontics": 75
+   },
+   "test_by_source": {
+    "tufts": 1005
+   },
+   "train_groups": 571,
+   "test_groups": 541,
+   "frozen_excluded": 162,
+   "fold_val_sizes": {
+    "0": 164,
+    "1": 176,
+    "2": 160,
+    "3": 156,
+    "4": 157
+   }
+  }
+ },
+ "results": {
+  "in_domain": {
+   "arch": "deit_small_patch16_224",
+   "n_seeds": {
+    "ctrl4": 3,
+    "five": 3
+   },
+   "A_in_domain_four_class": {
+    "n": 2048,
+    "ctrl4": {
+     "macro_f1": 0.9354,
+     "per_class": {
+      "Endodontics": {
+       "precision": 0.9944,
+       "recall": 0.977,
+       "f1": 0.9857,
+       "support": 914
+      },
+      "Healthy": {
+       "precision": 0.9841,
+       "recall": 0.9451,
+       "f1": 0.9642,
+       "support": 983
+      },
+      "Impacted": {
+       "precision": 0.7005,
+       "recall": 0.985,
+       "f1": 0.8187,
+       "support": 133
+      },
+      "Implant": {
+       "precision": 0.9474,
+       "recall": 1.0,
+       "f1": 0.973,
+       "support": 18
+      }
+     }
+    },
+    "five": {
+     "macro_f1": 0.9362,
+     "per_class": {
+      "Endodontics": {
+       "precision": 0.9989,
+       "recall": 0.9683,
+       "f1": 0.9833,
+       "support": 914
+      },
+      "Healthy": {
+       "precision": 0.9941,
+       "recall": 0.8545,
+       "f1": 0.919,
+       "support": 983
+      },
+      "Impacted": {
+       "precision": 0.7831,
+       "recall": 0.9774,
+       "f1": 0.8696,
+       "support": 133
+      },
+      "Implant": {
+       "precision": 0.9474,
+       "recall": 1.0,
+       "f1": 0.973,
+       "support": 18
+      }
+     },
+     "predicted_restored": 132,
+     "predicted_restored_by_true_class": {
+      "Endodontics": 22,
+      "Healthy": 108,
+      "Impacted": 2,
+      "Implant": 0
+     }
+    }
+   },
+   "B_restored_in_domain": {
+    "n": 969,
+    "five_recall": 0.9112,
+    "five_predicted": {
+     "Endodontics": 9,
+     "Healthy": 75,
+     "Impacted": 2,
+     "Implant": 0,
+     "Restored": 883
+    },
+    "ctrl4_predicted": {
+     "Endodontics": 321,
+     "Healthy": 576,
+     "Impacted": 72,
+     "Implant": 0
+    },
+    "five_confusion_full": [
+     [
+      885,
+      5,
+      2,
+      0,
+      22
+     ],
+     [
+      0,
+      840,
+      34,
+      1,
+      108
+     ],
+     [
+      1,
+      0,
+      130,
+      0,
+      2
+     ],
+     [
+      0,
+      0,
+      0,
+      18,
+      0
+     ],
+     [
+      9,
+      75,
+      2,
+      0,
+      883
+     ]
+    ]
+   },
+   "C_external_expert_labels": {
+    "n": 2283,
+    "by_source": {
+     "tufts": 1080,
+     "dentex": 1203
+    },
+    "tufts": {
+     "n": 1080,
+     "restored_crops": 264,
+     "restored_recovered_by_five": 230,
+     "restored_called_endo_or_implant_ctrl4": 201,
+     "restored_called_endo_or_implant_five": 28,
+     "four_class_macro_f1_ctrl4": 0.8742,
+     "four_class_macro_f1_five": 0.8503,
+     "view1_restored_excluded": {
+      "n": 816,
+      "ctrl4": {
+       "Endodontics": {
+        "precision": 0.9429,
+        "recall": 0.8148,
+        "f1": 0.8742,
+        "support": 81
+       },
+       "Healthy": {
+        "precision": 0.9827,
+        "recall": 0.6855,
+        "f1": 0.8076,
+        "support": 248
+       },
+       "Impacted": {
+        "precision": 0.9057,
+        "recall": 0.9897,
+        "f1": 0.9458,
+        "support": 291
+       },
+       "Implant": {
+        "precision": 0.7686,
+        "recall": 1.0,
+        "f1": 0.8692,
+        "support": 196
+       }
+      },
+      "five": {
+       "Endodontics": {
+        "precision": 1.0,
+        "recall": 0.8272,
+        "f1": 0.9054,
+        "support": 81
+       },
+       "Healthy": {
+        "precision": 0.9915,
+        "recall": 0.4677,
+        "f1": 0.6356,
+        "support": 248
+       },
+       "Impacted": {
+        "precision": 0.941,
+        "recall": 0.9863,
+        "f1": 0.9631,
+        "support": 291
+       },
+       "Implant": {
+        "precision": 0.8133,
+        "recall": 1.0,
+        "f1": 0.897,
+        "support": 196
+       }
+      }
+     },
+     "view2_all_crops": {
+      "n": 1080,
+      "ctrl4": {
+       "Endodontics": {
+        "precision": 0.2907,
+        "recall": 0.8148,
+        "f1": 0.4286,
+        "support": 81
+       },
+       "Healthy": {
+        "precision": 0.7556,
+        "recall": 0.6855,
+        "f1": 0.7188,
+        "support": 248
+       },
+       "Impacted": {
+        "precision": 0.8754,
+        "recall": 0.9897,
+        "f1": 0.929,
+        "support": 291
+       },
+       "Implant": {
+        "precision": 0.6555,
+        "recall": 1.0,
+        "f1": 0.7919,
+        "support": 196
+       },
+       "Restored": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 264
+       }
+      },
+      "five": {
+       "Endodontics": {
+        "precision": 0.8072,
+        "recall": 0.8272,
+        "f1": 0.8171,
+        "support": 81
+       },
+       "Healthy": {
+        "precision": 0.9587,
+        "recall": 0.4677,
+        "f1": 0.6287,
+        "support": 248
+       },
+       "Impacted": {
+        "precision": 0.9349,
+        "recall": 0.9863,
+        "f1": 0.9599,
+        "support": 291
+       },
+       "Implant": {
+        "precision": 0.7747,
+        "recall": 1.0,
+        "f1": 0.8731,
+        "support": 196
+       },
+       "Restored": {
+        "precision": 0.7278,
+        "recall": 0.8712,
+        "f1": 0.7931,
+        "support": 264
+       }
+      },
+      "ctrl4_macro_f1_4cls": 0.7171,
+      "five_macro_f1_5cls": 0.8144
+     }
+    },
+    "dentex": {
+     "n": 1203,
+     "restored_crops": 214,
+     "restored_recovered_by_five": 157,
+     "restored_called_endo_or_implant_ctrl4": 157,
+     "restored_called_endo_or_implant_five": 44,
+     "four_class_macro_f1_ctrl4": 0.7656,
+     "four_class_macro_f1_five": 0.7429,
+     "view1_restored_excluded": {
+      "n": 989,
+      "ctrl4": {
+       "Endodontics": {
+        "precision": 0.9764,
+        "recall": 0.9051,
+        "f1": 0.9394,
+        "support": 137
+       },
+       "Healthy": {
+        "precision": 0.9854,
+        "recall": 0.5232,
+        "f1": 0.6835,
+        "support": 388
+       },
+       "Impacted": {
+        "precision": 0.904,
+        "recall": 0.9923,
+        "f1": 0.9461,
+        "support": 389
+       },
+       "Implant": {
+        "precision": 0.3275,
+        "recall": 1.0,
+        "f1": 0.4934,
+        "support": 75
+       }
+      },
+      "five": {
+       "Endodontics": {
+        "precision": 1.0,
+        "recall": 0.9124,
+        "f1": 0.9542,
+        "support": 137
+       },
+       "Healthy": {
+        "precision": 0.9806,
+        "recall": 0.3918,
+        "f1": 0.5599,
+        "support": 388
+       },
+       "Impacted": {
+        "precision": 0.9211,
+        "recall": 0.9897,
+        "f1": 0.9542,
+        "support": 389
+       },
+       "Implant": {
+        "precision": 0.3363,
+        "recall": 1.0,
+        "f1": 0.5034,
+        "support": 75
+       }
+      }
+     },
+     "view2_all_crops": {
+      "n": 1203,
+      "ctrl4": {
+       "Endodontics": {
+        "precision": 0.498,
+        "recall": 0.9051,
+        "f1": 0.6425,
+        "support": 137
+       },
+       "Healthy": {
+        "precision": 0.8185,
+        "recall": 0.5232,
+        "f1": 0.6384,
+        "support": 388
+       },
+       "Impacted": {
+        "precision": 0.8733,
+        "recall": 0.9923,
+        "f1": 0.929,
+        "support": 389
+       },
+       "Implant": {
+        "precision": 0.2841,
+        "recall": 1.0,
+        "f1": 0.4425,
+        "support": 75
+       },
+       "Restored": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 214
+       }
+      },
+      "five": {
+       "Endodontics": {
+        "precision": 0.8562,
+        "recall": 0.9124,
+        "f1": 0.8834,
+        "support": 137
+       },
+       "Healthy": {
+        "precision": 0.9441,
+        "recall": 0.3918,
+        "f1": 0.5537,
+        "support": 388
+       },
+       "Impacted": {
+        "precision": 0.9059,
+        "recall": 0.9897,
+        "f1": 0.9459,
+        "support": 389
+       },
+       "Implant": {
+        "precision": 0.3049,
+        "recall": 1.0,
+        "f1": 0.4673,
+        "support": 75
+       },
+       "Restored": {
+        "precision": 0.6978,
+        "recall": 0.7336,
+        "f1": 0.7153,
+        "support": 214
+       }
+      },
+      "ctrl4_macro_f1_4cls": 0.6631,
+      "five_macro_f1_5cls": 0.7131
+     }
+    },
+    "all": {
+     "n": 2283,
+     "restored_crops": 478,
+     "restored_recovered_by_five": 387,
+     "restored_called_endo_or_implant_ctrl4": 358,
+     "restored_called_endo_or_implant_five": 72,
+     "four_class_macro_f1_ctrl4": 0.8286,
+     "four_class_macro_f1_five": 0.8056,
+     "view1_restored_excluded": {
+      "n": 1805,
+      "ctrl4": {
+       "Endodontics": {
+        "precision": 0.9645,
+        "recall": 0.8716,
+        "f1": 0.9157,
+        "support": 218
+       },
+       "Healthy": {
+        "precision": 0.9842,
+        "recall": 0.5865,
+        "f1": 0.735,
+        "support": 636
+       },
+       "Impacted": {
+        "precision": 0.9047,
+        "recall": 0.9912,
+        "f1": 0.946,
+        "support": 680
+       },
+       "Implant": {
+        "precision": 0.5599,
+        "recall": 1.0,
+        "f1": 0.7179,
+        "support": 271
+       }
+      },
+      "five": {
+       "Endodontics": {
+        "precision": 1.0,
+        "recall": 0.8807,
+        "f1": 0.9366,
+        "support": 218
+       },
+       "Healthy": {
+        "precision": 0.9853,
+        "recall": 0.4214,
+        "f1": 0.5903,
+        "support": 636
+       },
+       "Impacted": {
+        "precision": 0.9295,
+        "recall": 0.9882,
+        "f1": 0.9579,
+        "support": 680
+       },
+       "Implant": {
+        "precision": 0.5841,
+        "recall": 1.0,
+        "f1": 0.7374,
+        "support": 271
+       }
+      }
+     },
+     "view2_all_crops": {
+      "n": 2283,
+      "ctrl4": {
+       "Endodontics": {
+        "precision": 0.3992,
+        "recall": 0.8716,
+        "f1": 0.5476,
+        "support": 218
+       },
+       "Healthy": {
+        "precision": 0.7886,
+        "recall": 0.5865,
+        "f1": 0.6727,
+        "support": 636
+       },
+       "Impacted": {
+        "precision": 0.8742,
+        "recall": 0.9912,
+        "f1": 0.929,
+        "support": 680
+       },
+       "Implant": {
+        "precision": 0.4813,
+        "recall": 1.0,
+        "f1": 0.6499,
+        "support": 271
+       },
+       "Restored": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 478
+       }
+      },
+      "five": {
+       "Endodontics": {
+        "precision": 0.8384,
+        "recall": 0.8807,
+        "f1": 0.8591,
+        "support": 218
+       },
+       "Healthy": {
+        "precision": 0.9504,
+        "recall": 0.4214,
+        "f1": 0.5839,
+        "support": 636
+       },
+       "Impacted": {
+        "precision": 0.918,
+        "recall": 0.9882,
+        "f1": 0.9518,
+        "support": 680
+       },
+       "Implant": {
+        "precision": 0.5431,
+        "recall": 1.0,
+        "f1": 0.7039,
+        "support": 271
+       },
+       "Restored": {
+        "precision": 0.7153,
+        "recall": 0.8096,
+        "f1": 0.7596,
+        "support": 478
+       }
+      },
+      "ctrl4_macro_f1_4cls": 0.6998,
+      "five_macro_f1_5cls": 0.7716
+     }
+    }
+   }
+  },
+  "lodo": {
+   "dentex": {
+    "train_primary_only": {
+     "macro_f1_mean": 0.8179067100679966,
+     "macro_f1_std": 0.021677111231673506,
+     "per_class_f1": {
+      "Endodontics": 0.8246008540094367,
+      "Healthy": 0.8013298900403569,
+      "Impacted": 0.9151047565099275,
+      "Implant": 0.8392469862493843,
+      "Restored": 0.7092510635308783
+     },
+     "n": 1116
+    },
+    "train_plus_other_external": {
+     "macro_f1_mean": 0.8420979038019669,
+     "macro_f1_std": 0.04670244866508772,
+     "per_class_f1": {
+      "Endodontics": 0.8846645029345389,
+      "Healthy": 0.7783851135270801,
+      "Impacted": 0.9522748359807061,
+      "Implant": 0.833419409631364,
+      "Restored": 0.7617456569361453
+     },
+     "n": 1116
+    }
+   },
+   "tufts": {
+    "train_primary_only": {
+     "macro_f1_mean": 0.8420672072720731,
+     "macro_f1_std": 0.007811143397931559,
+     "per_class_f1": {
+      "Endodontics": 0.7604437008117989,
+      "Healthy": 0.7790236222805571,
+      "Impacted": 0.8981278577606658,
+      "Implant": 0.9531061362012467,
+      "Restored": 0.8196347193060969
+     },
+     "n": 1005
+    },
+    "train_plus_other_external": {
+     "macro_f1_mean": 0.8936712147109972,
+     "macro_f1_std": 0.009140176952991337,
+     "per_class_f1": {
+      "Endodontics": 0.8633071431882445,
+      "Healthy": 0.8191060213195045,
+      "Impacted": 0.9517941927123124,
+      "Implant": 0.9638064190575767,
+      "Restored": 0.8703422972773481
+     },
+     "n": 1005
+    }
+   }
+  }
+ }
+}

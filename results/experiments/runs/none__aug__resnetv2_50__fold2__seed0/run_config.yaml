@@ -1,0 +1,15 @@
+{
+  "mode": "cv",
+  "enhancement": "none",
+  "aug": "aug",
+  "arch": "resnetv2_50",
+  "fold": 2,
+  "seed": 0,
+  "run_id": "none__aug__resnetv2_50__fold2__seed0",
+  "run_dir": "runs/none__aug__resnetv2_50__fold2__seed0",
+  "batch": 64,
+  "lr": 0.0001,
+  "epochs": 150,
+  "patience": 20,
+  "workers": 6
+}

@@ -1,0 +1,48 @@
+{
+ "classes": [
+  "Endodontics",
+  "Healthy",
+  "Impacted",
+  "Implant"
+ ],
+ "formula": "p'(c|x,t) = p(c|x) * P(c|t) * 4, renormalised over the 4 classes; t = tooth type from the FDI unit digit (1-2 incisor, 3 canine, 4-5 premolar, 6 1st molar, 7 2nd molar, 8 3rd molar); unknown type: no reweighting",
+ "source": "toothfindings.evaluation.prevalence.laplace_prior: annotations of the training-partition patients (splits/splits/train_pool.csv), Laplace (+1/+4)",
+ "prior": {
+  "1st molar": [
+   0.293478,
+   0.612319,
+   0.003623,
+   0.09058
+  ],
+  "2nd molar": [
+   0.160535,
+   0.809365,
+   0.003344,
+   0.026756
+  ],
+  "3rd molar": [
+   0.024615,
+   0.412308,
+   0.556923,
+   0.006154
+  ],
+  "canine": [
+   0.049069,
+   0.935702,
+   0.005076,
+   0.010152
+  ],
+  "incisor": [
+   0.065944,
+   0.920506,
+   0.000903,
+   0.012647
+  ],
+  "premolar": [
+   0.124719,
+   0.844944,
+   0.001124,
+   0.029213
+  ]
+ }
+}

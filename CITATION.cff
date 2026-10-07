@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite them as below."
+title: "TITLE PLACEHOLDER: tooth-level findings on panoramic radiographs (code and results)"
+authors:
+  - family-names: "FAMILY NAME PLACEHOLDER"
+    given-names: "GIVEN NAMES PLACEHOLDER"
+    affiliation: "PPGCA, FFCLRP, University of São Paulo"
+version: "1.0.0"
+doi: "10.0000/PLACEHOLDER"
+repository-code: "https://github.com/OWNER/REPOSITORY"
+type: software
+license: MIT

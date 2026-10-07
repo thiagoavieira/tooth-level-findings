@@ -1,0 +1,25 @@
+# Path configuration of toothfindings. Relative paths are resolved against the repository root.
+# Every key can also be set with an environment variable TOOTHFINDINGS_<KEY> (upper case),
+# or on the command line with `toothfindings --set key=value ...`. See src/toothfindings/config.py.
+[paths]
+results = "results"   # released results (versioned)
+data = "data"         # restricted data, obtained separately (docs/DATA.md); never versioned
+build = "build"       # generated tables and figures
+
+# Optional finer overrides (defaults shown):
+# experiments = "results/experiments"
+# splits = "results/splits"
+# external = "results/external"
+# review = "results/review_analysis"
+# reporting = "results/reporting"
+# lyria_json = "data/lyria/json"
+# lyria_images = "data/lyria/images"
+# dentex_implant_crops = "data/dentex_implant_crops"
+# dentex = "data/dentex"
+# tufts = "data/tufts"
+# models = "data/models"
+# mouth_onnx = "data/models/mouth.onnx"
+# tooth_onnx = "data/models/tooth_seg.onnx"
+# review_exports = "data/review"
+# crops = "data/crops"
+# external_work = "data/external"

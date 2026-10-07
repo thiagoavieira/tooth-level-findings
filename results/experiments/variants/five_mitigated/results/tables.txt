@@ -1,0 +1,157 @@
+A1. In-domain test, three-seed ensemble (results.json: A_indomain.*.ensemble)
+Class                  P:Four-class mit.  P:Five-class  P:Five-class mit.  R:Four-class mit.  R:Five-class  R:Five-class mit.  F1:Four-class mit.  F1:Five-class  F1:Five-class mit.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Endo. treated          0.997              0.999         0.995              0.947              0.968         0.946              0.971               0.983          0.970             
+Sound                  0.947              0.994         0.991              0.991              0.855         0.777              0.969               0.919          0.871             
+Impacted               0.947              0.783         0.940              0.947              0.977         0.947              0.947               0.870          0.944             
+Implant                1.000              0.947         1.000              1.000              1.000         0.944              1.000               0.973          0.971             
+Restored               -                  0.870         0.772              -                  0.911         0.897              -                   0.890          0.830             
+Macro-F1 four (2,048)  0.9719             0.9362        0.9392                                                                                                                      
+Macro-F1 five (3,017)  -                  0.9176        0.9024                                                                                                                      
+
+A2. In-domain test, mean +- sd over 3 seeds, % (results.json: A_indomain)
+Model                      Class                  P             R            F1          
+-----------------------------------------------------------------------------------------
+Four-class mit.            Endo. treated          99.2 +- 0.4   93.1 +- 4.8  96.0 +- 2.5 
+                           Sound                  93.6 +- 4.0   98.7 +- 0.4  96.1 +- 2.0 
+                           Impacted               94.3 +- 0.9   95.0 +- 1.6  94.6 +- 1.2 
+                           Implant                95.0 +- 8.7   98.1 +- 3.2  96.5 +- 6.1 
+                           Macro-F1 four (2,048)  95.8 +- 2.9                            
+Five-class                 Endo. treated          98.4 +- 1.1   96.0 +- 0.8  97.2 +- 0.8 
+                           Sound                  90.5 +- 0.4   83.9 +- 1.8  87.0 +- 0.9 
+                           Impacted               77.1 +- 6.5   96.2 +- 2.0  85.4 +- 3.1 
+                           Implant                78.8 +- 20.0  98.1 +- 3.2  86.3 +- 12.4
+                           Restored               85.1 +- 1.2   89.9 +- 0.7  87.4 +- 1.0 
+                           Macro-F1 four (2,048)  90.5 +- 3.7                            
+                           Macro-F1 five (3,017)  88.7 +- 3.0                            
+Five-class mit., no prior  Endo. treated          96.9 +- 1.1   95.3 +- 2.3  96.0 +- 1.4 
+                           Sound                  87.9 +- 2.1   67.0 +- 4.3  76.0 +- 3.4 
+                           Impacted               85.8 +- 1.5   95.5 +- 0.8  90.4 +- 0.9 
+                           Implant                74.9 +- 5.0   98.1 +- 3.2  84.9 +- 3.0 
+                           Restored               71.8 +- 3.2   88.6 +- 1.3  79.3 +- 2.5 
+                           Macro-F1 four (2,048)  88.8 +- 1.5                            
+                           Macro-F1 five (3,017)  85.3 +- 1.7                            
+Five-class mit.            Endo. treated          98.6 +- 0.6   91.2 +- 5.8  94.7 +- 3.0 
+                           Sound                  87.0 +- 3.3   77.3 +- 3.7  81.8 +- 1.0 
+                           Impacted               90.3 +- 2.0   95.0 +- 0.9  92.6 +- 0.6 
+                           Implant                93.0 +- 6.1   96.3 +- 3.2  94.6 +- 4.7 
+                           Restored               74.9 +- 1.0   87.9 +- 2.3  80.9 +- 1.6 
+                           Macro-F1 four (2,048)  92.7 +- 1.6                            
+                           Macro-F1 five (3,017)  88.9 +- 1.5                            
+
+B. Deployment prevalence (results.json: B_prevalence.<cfg>.{base_8672,plus_restored_4labels})
+Set         Configuration                    Imp P        Imp R  Imp F1  Macro-F1(4)  FF/exam ens                 Exams w/o FF %  FF strict  exams
+--------------------------------------------------------------------------------------------------------------------------------------------------
+8,672       Four-class, negatives + context  61.9 +- 2.4  95.0   74.9    90.6 +- 0.8  0.239 (seeds 0.297+-0.102)  80.6            0.239      568  
+              + prior (four-class best)      70.6 +- 3.3  95.0   80.9    93.3 +- 0.6  0.136 (seeds 0.158+-0.057)  89.3            0.136      568  
+            Five-class, no mitigation        32.2 +- 8.5  96.2   47.7    82.5 +- 3.9  0.526 (seeds 0.535+-0.188)  71.3            1.859      568  
+              + prior                        41.0 +- 5.4  96.5   57.4    86.0 +- 1.9  0.340 (seeds 0.340+-0.075)  80.3            1.660      568  
+            Five-class, negatives + context  64.2 +- 3.0  95.5   76.8    87.2 +- 0.7  0.150 (seeds 0.211+-0.051)  87.3            3.447      568  
+              + prior                        70.8 +- 4.8  95.0   81.1    90.4 +- 1.5  0.104 (seeds 0.123+-0.016)  91.0            2.514      568  
++ restored  Four-class, negatives + context  53.8 +- 2.4  95.0   68.6    74.9 +- 1.7  2.468 (seeds 2.534+-1.361)  33.5            2.468      585  
+              + prior (four-class best)      63.2 +- 3.0  95.0   75.8    79.6 +- 3.5  1.482 (seeds 1.689+-1.095)  46.2            1.482      585  
+            Five-class, no mitigation        31.1 +- 9.0  96.2   46.4    79.9 +- 4.4  0.670 (seeds 0.710+-0.231)  61.7            9.542      585  
+              + prior                        39.6 +- 6.4  96.5   55.9    83.9 +- 2.2  0.443 (seeds 0.454+-0.106)  73.2            9.236      585  
+            Five-class, negatives + context  61.1 +- 3.0  95.5   74.5    83.7 +- 0.7  0.374 (seeds 0.473+-0.057)  73.5            11.318     585  
+              + prior                        66.6 +- 3.2  95.0   78.3    87.8 +- 1.4  0.250 (seeds 0.282+-0.025)  81.4            10.299     585  
+
+B2. Secondary deployment views: macro-F1 over five on +restored; lyria-only base (8,635, no DENTEX implants); restored teeth (n=4919) called endo/impacted/implant
+cfg           Macro-F1(5) +rest  Imp P lyria-only  Macro-F1(4) lyria-only  rest->endo  rest->imp  rest->implant
+---------------------------------------------------------------------------------------------------------------
+REF4_noprior  -                  61.9 +- 2.4       88.8 +- 2.4             1285        21         2            
+REF4_prior    -                  70.6 +- 3.3       92.7 +- 1.6             772         18         0            
+FIVE0         81.1 +- 3.7        32.2 +- 8.5       80.0 +- 5.6             76          16         1            
+FIVE0_prior5  84.2 +- 1.8        41.0 +- 5.4       84.8 +- 2.9             57          8          1            
+NEW_noprior   82.6 +- 1.0        64.2 +- 3.0       84.5 +- 0.8             121         11         2            
+NEW_prior     86.4 +- 1.4        70.8 +- 4.8       89.3 +- 2.2             76          10         1            
+
+B3. Sound teeth flagged impacted by tooth type, ensemble, 8,672 set
+cfg           3rd molar  2nd molar  1st molar  premolar  canine  incisor
+------------------------------------------------------------------------
+REF4_noprior  51/363     8/528      0/356      1/1846    3/1613  5/2866 
+REF4_prior    55/363     0/528      0/356      0/1846    0/1613  0/2866 
+FIVE0         174/363    100/528    11/356     1/1846    1/1613  2/2866 
+FIVE0_prior5  187/363    1/528      0/356      0/1846    0/1613  0/2866 
+NEW_noprior   40/363     9/528      0/356      0/1846    2/1613  6/2866 
+NEW_prior     45/363     0/528      0/356      0/1846    0/1613  0/2866 
+
+B4. Operating thresholds, 8,672 set, ensemble (results.json: B_operating.<cfg>.base_8672)
+Model                                     tau   FF/exam  Exams w/o FF %  P imp  R imp  R endo  R implant
+--------------------------------------------------------------------------------------------------------
+Four-class best (neg. + context + prior)  none  0.136    89.3            69.6   94.7   94.7    100.0    
+                                          0.70  0.085    93.0            77.2   94.0   89.8    98.2     
+                                          0.80  0.067    94.4            81.0   93.2   86.1    98.2     
+                                          0.90  0.049    96.0            82.9   91.0   81.7    98.2     
+Five-class, neg. + context                none  0.150    87.3            68.6   95.5   96.3    100.0    
+                                          0.70  0.070    94.0            81.8   94.7   93.6    98.2     
+                                          0.80  0.053    95.6            84.8   92.5   90.0    98.2     
+                                          0.90  0.035    97.0            88.8   89.5   82.5    98.2     
+  + prior                                 none  0.104    91.0            73.7   94.7   94.6    98.2     
+                                          0.70  0.062    94.7            80.5   93.2   87.6    98.2     
+                                          0.80  0.049    95.6            83.6   91.7   81.1    92.7     
+                                          0.90  0.030    97.5            87.4   88.7   70.0    90.9     
+
+B5. Operating thresholds, +restored set (results.json: B_operating.<cfg>.plus_restored)
+Model        tau   FF/exam  Exams w/o FF %  P imp  R imp  R endo
+----------------------------------------------------------------
+REF4_prior   none  1.482    46.2            63.3   94.7   94.7  
+REF4_prior   0.7   0.627    64.6            72.7   94.0   89.8  
+REF4_prior   0.8   0.393    74.4            78.0   93.2   86.1  
+REF4_prior   0.9   0.258    81.5            81.2   91.0   81.7  
+NEW_noprior  none  0.374    73.5            64.8   95.5   96.3  
+NEW_noprior  0.7   0.198    84.6            81.3   94.7   93.6  
+NEW_noprior  0.8   0.145    88.5            84.8   92.5   90.0  
+NEW_noprior  0.9   0.089    92.5            88.8   89.5   82.5  
+NEW_prior    none  0.250    81.4            69.6   94.7   94.6  
+NEW_prior    0.7   0.132    89.1            79.0   93.2   87.6  
+NEW_prior    0.8   0.094    92.0            83.0   91.7   81.1  
+NEW_prior    0.9   0.044    96.1            87.4   88.7   70.0  
+
+C. Restored confusion (results.json: A_indomain.<cfg>.restored_test_crops, C_external.<model>.*)
+Model                              ->Endo  ->Sound  ->Imp  ->Implant  ->Restored  endo per seed  ext ->endo/impl  per seed     rec Tufts %  rec DENTEX %
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Four-class                         321     576      72     0          -           200,331,430    358              322,382,352  -            -           
+Four-class mitigated               150     812      7      0          -           45,270,162     288              200,343,294  -            -           
+Five-class                         9       75       2      0          883         5,21,8         72               63,135,78    87.1         73.4        
+Five-class mitigated               5       86       9      0          869         11,3,9         88               124,97,100   81.8         72.4        
+  no prior in domain               15      71       9      0          874         22,23,13       -                -            -            -           
+Five-class mitigated, InReDD only  -       -        -      -          -           -              53               29,83,88     87.1         70.6        
+
+C2. External, all 2,283 reviewed crops, ensemble (view 2 of eval_e1; NEW and FIVE0 trained on 137 of the reviewed implants)
+Model     Endo P  Endo F1  Sound R  Implant P  Restored F1
+----------------------------------------------------------
+CTRL4     0.399   0.548    0.586    0.481      0.000      
+FIVE0     0.838   0.859    0.421    0.543      0.760      
+REF4      0.398   0.551    0.838    0.821      0.000      
+NEW       0.792   0.830    0.450    0.522      0.762      
+NEW_LODO  0.761   0.850    0.764    0.974      0.791      
+
+D. LODO, InReDD-only training, per-class F1 mean over seeds (results.json: D_lodo)
+Class                DENTEX published  DENTEX mitigated  Tufts published  Tufts mitigated
+-----------------------------------------------------------------------------------------
+Endo. treated        0.825             0.839             0.760            0.791          
+Sound                0.801             0.791             0.779            0.820          
+Impacted             0.915             0.942             0.898            0.967          
+Implant              0.839             0.909             0.953            0.958          
+Restored             0.709             0.678             0.820            0.814          
+Macro-F1 (sd ddof0)  81.8 +- 2.2       83.2 +- 0.4       84.2 +- 0.8      87.0 +- 1.8    
+Macro-F1 (sd ddof1)  81.8 +- 2.7       83.2 +- 0.5       84.2 +- 1.0      87.0 +- 2.2    
+
+E. Cost (results.json: E_cost; params.json)
+Model                                     Params (M)  Runs  GPU h  median min
+-----------------------------------------------------------------------------
+Five-class mitigated (CV + test)          21.67       18    0.493  1.61      
+Five-class mitigated, InReDD only (test)  21.67       3     0.072  1.45      
+
+S1. CV validation macro-F1 (5 classes), 15 blocks (results.json: S_cv)
+NEW mean+-sd  FIVE0 mean+-sd  diff   dz     p t paired  p Holm  p Wilcoxon  p Welch
+-----------------------------------------------------------------------------------
+91.2 +- 1.2   94.4 +- 1.5     -3.19  -2.09  0.0000      0.0000  0.0001      0.0000 
+
+S2. Patient-clustered bootstrap (2,000), NEW+prior minus REF4+prior, three-seed ensembles (results.json: bootstrap)
+quantity                            point    95% CI              clusters
+-------------------------------------------------------------------------
+impacted_precision_new_minus_ref4   +0.0407  [-0.0050, +0.0896]  623     
+macro_f1_4_new_minus_ref4           -0.0189  [-0.0288, -0.0086]  623     
+ff_per_exam_new_minus_ref4          -0.0317  [-0.0581, -0.0070]  568     
+indomain_macro_f1_4_new_minus_ref4  -0.0327  [-0.0580, -0.0198]  598     

@@ -1,0 +1,15 @@
+{
+  "mode": "cv",
+  "enhancement": "msthgr",
+  "aug": "noaug",
+  "arch": "resnetv2_50",
+  "fold": 3,
+  "seed": 1,
+  "run_id": "msthgr__noaug__resnetv2_50__fold3__seed1",
+  "run_dir": "runs/msthgr__noaug__resnetv2_50__fold3__seed1",
+  "batch": 64,
+  "lr": 0.0001,
+  "epochs": 150,
+  "patience": 20,
+  "workers": 6
+}

@@ -1,0 +1,60 @@
+{
+ "n_pans_with_gt": 678,
+ "n_pans_with_preds": 678,
+ "gt_counts": {
+  "Impacted": 604,
+  "Caries": 2189,
+  "Periapical Lesion": 158,
+  "Deep Caries": 578
+ },
+ "detection_recall_by_diagnosis": {
+  "Impacted": 0.859271523178808,
+  "Caries": 0.9671082686158063,
+  "Periapical Lesion": 0.5632911392405063,
+  "Deep Caries": 0.7854671280276817
+ },
+ "impacted": {
+  "gt": 604,
+  "detected": 519,
+  "recall_end_to_end": 0.7781456953642384,
+  "recall_classifier_only_on_detected": 0.905587668593449,
+  "pred_total": 1795,
+  "pred_matching_dentex_impacted": 470,
+  "pred_matching_other_dentex_diagnosis": 358,
+  "pred_unmatched_no_dentex_annotation": 967,
+  "precision_lower_bound": 0.2618384401114206,
+  "impacted_flags_not_in_dentex_per_pan_mean": 1.9542772861356932,
+  "gt_by_tooth_number": {
+   "8": 604
+  },
+  "hit_by_tooth_number": {
+   "8": 470
+  }
+ },
+ "prediction_of_detected_dentex_teeth": {
+  "Impacted": {
+   "Endodontics": 1,
+   "Healthy": 32,
+   "Impacted": 470,
+   "Implant": 16
+  },
+  "Caries": {
+   "Endodontics": 227,
+   "Healthy": 1378,
+   "Impacted": 261,
+   "Implant": 251
+  },
+  "Periapical Lesion": {
+   "Endodontics": 45,
+   "Healthy": 23,
+   "Impacted": 3,
+   "Implant": 18
+  },
+  "Deep Caries": {
+   "Endodontics": 36,
+   "Healthy": 273,
+   "Impacted": 94,
+   "Implant": 51
+  }
+ }
+}

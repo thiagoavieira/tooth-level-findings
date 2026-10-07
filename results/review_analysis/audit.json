@@ -1,0 +1,450 @@
+{
+ "tufts": {
+  "strata": {
+   "Endodontics": {
+    "tau": 0.7,
+    "n_pop": 2708,
+    "A": 1811,
+    "B": 764,
+    "C_uncovered": 133
+   },
+   "Healthy": {
+    "tau": 0.5,
+    "n_pop": 19096,
+    "A": 16549,
+    "B": 242,
+    "C_uncovered": 2305
+   },
+   "Impacted": {
+    "tau": 0.99,
+    "n_pop": 1766,
+    "A": 298,
+    "B": 1468,
+    "C_uncovered": 0
+   },
+   "Implant": {
+    "tau": 0.5,
+    "n_pop": 386,
+    "A": 250,
+    "B": 51,
+    "C_uncovered": 85
+   }
+  },
+  "n_reviewed": 1182,
+  "n_reader_disagreements_excluded": 66,
+  "n_out_of_scope_excluded": 0,
+  "weights": {
+   "Endodontics|A": 7.806034482758621,
+   "Endodontics|B": 17.767441860465116,
+   "Healthy|A": 71.33189655172414,
+   "Healthy|B": 5.627906976744186,
+   "Impacted|A": 1.0311418685121108,
+   "Impacted|B": 29.959183673469386,
+   "Implant|A": 1.0080645161290323,
+   "Implant|B": 1.108695652173913
+  },
+  "precision_at_review_tau": {
+   "Endodontics": {
+    "estimate": 0.2715517241379313,
+    "ci95": [
+     0.21428571428571458,
+     0.32341631492807327
+    ],
+    "est_population": 1810.999999999997
+   },
+   "Healthy": {
+    "estimate": 0.7456896551724127,
+    "ci95": [
+     0.6839821734868891,
+     0.7999999999999992
+    ],
+    "est_population": 16549.000000000036
+   },
+   "Impacted": {
+    "estimate": 0.9238754325259512,
+    "ci95": [
+     0.8908300412229468,
+     0.9508880346934749
+    ],
+    "est_population": 298.0000000000017
+   },
+   "Implant": {
+    "estimate": 0.7862903225806464,
+    "ci95": [
+     0.7229584236186367,
+     0.838712330220714
+    ],
+    "est_population": 249.99999999999955
+   }
+  },
+  "precision_lenient": {
+   "Endodontics": 0.2715517241379313,
+   "Healthy": 0.7456896551724127,
+   "Impacted": 0.9238754325259512,
+   "Implant": 0.8346774193548396
+  },
+  "precision_vs_threshold": {
+   "0.5": {
+    "precision": {
+     "Endodontics": 0.2141353916966518,
+     "Healthy": 0.7456896551724127,
+     "Impacted": 0.5574872648939974,
+     "Implant": 0.7862903225806464
+    },
+    "est_predictions_kept": {
+     "Endodontics": 2379.558139534882,
+     "Healthy": 16549.000000000036,
+     "Impacted": 1676.1224489795952,
+     "Implant": 249.99999999999955
+    }
+   },
+   "0.6": {
+    "precision": {
+     "Endodontics": 0.24318842374100264,
+     "Healthy": 0.7489177489177478,
+     "Impacted": 0.5781552777450817,
+     "Implant": 0.8024691358024703
+    },
+    "est_predictions_kept": {
+     "Endodontics": 2095.2790697674395,
+     "Healthy": 16477.66810344831,
+     "Impacted": 1616.2040816326564,
+     "Implant": 244.95967741935442
+    }
+   },
+   "0.7": {
+    "precision": {
+     "Endodontics": 0.2715517241379313,
+     "Healthy": 0.7578475336322859,
+     "Impacted": 0.6135274880021346,
+     "Implant": 0.8158995815899592
+    },
+    "est_predictions_kept": {
+     "Endodontics": 1810.999999999997,
+     "Healthy": 15907.012931034516,
+     "Impacted": 1376.5306122449012,
+     "Implant": 240.92741935483832
+    }
+   },
+   "0.8": {
+    "precision": {
+     "Endodontics": 0.3297872340425535,
+     "Healthy": 0.7735849056603762,
+     "Impacted": 0.6556125143368913,
+     "Implant": 0.8297872340425542
+    },
+    "est_predictions_kept": {
+     "Endodontics": 1467.5344827586184,
+     "Healthy": 15122.362068965545,
+     "Impacted": 1196.7755102040849,
+     "Implant": 236.89516129032222
+    }
+   },
+   "0.9": {
+    "precision": {
+     "Endodontics": 0.4580152671755729,
+     "Healthy": 0.8103448275862057,
+     "Impacted": 0.7258823204772905,
+     "Implant": 0.862222222222223
+    },
+    "est_predictions_kept": {
+     "Endodontics": 1022.5905172413779,
+     "Healthy": 12411.75000000001,
+     "Impacted": 957.1020408163296,
+     "Implant": 226.81451612903197
+    }
+   },
+   "0.95": {
+    "precision": {
+     "Endodontics": 0.6067415730337082,
+     "Healthy": 0.8359374999999993,
+     "Impacted": 0.8093066753793883,
+     "Implant": 0.8818181818181825
+    },
+    "est_predictions_kept": {
+     "Endodontics": 694.7370689655165,
+     "Healthy": 9130.482758620676,
+     "Impacted": 747.3877551020438,
+     "Implant": 221.77419354838685
+    }
+   },
+   "0.97": {
+    "precision": {
+     "Endodontics": 0.697368421052632,
+     "Healthy": 0.8829787234042558,
+     "Impacted": 0.8544772080874355,
+     "Implant": 0.8853211009174319
+    },
+    "est_predictions_kept": {
+     "Endodontics": 593.2586206896547,
+     "Healthy": 6705.198275862056,
+     "Impacted": 567.632653061227,
+     "Implant": 219.7580645161288
+    }
+   },
+   "0.99": {
+    "precision": {
+     "Endodontics": 0.9111111111111113,
+     "Healthy": 0.9354838709677419,
+     "Impacted": 0.9238754325259512,
+     "Implant": 0.8957345971563988
+    },
+    "est_predictions_kept": {
+     "Endodontics": 351.2715517241379,
+     "Healthy": 2211.2887931034493,
+     "Impacted": 298.0000000000017,
+     "Implant": 212.70161290322562
+    }
+   },
+   "0.995": {
+    "precision": {
+     "Endodontics": 0.9655172413793103,
+     "Healthy": 1.0,
+     "Impacted": 0.9705882352941173,
+     "Implant": 0.8965517241379317
+    },
+    "est_predictions_kept": {
+     "Endodontics": 226.37500000000014,
+     "Healthy": 142.66379310344828,
+     "Impacted": 140.235294117647,
+     "Implant": 204.63709677419342
+    }
+   }
+  },
+  "wrong_flags_per_radiograph": {
+   "0.5": 2.6651434738859967,
+   "0.6": 2.31590571419097,
+   "0.7": 1.8955659098521283,
+   "0.8": 1.4360374343351145,
+   "0.9": 0.8478370387708831,
+   "0.95": 0.44194274011705054,
+   "0.97": 0.2873438944608795,
+   "0.99": 0.07608667839313964,
+   "0.995": 0.03309995679551674
+  }
+ },
+ "dentex": {
+  "strata": {
+   "Endodontics": {
+    "tau": 0.7,
+    "n_pop": 3369,
+    "A": 2550,
+    "B": 710,
+    "C_uncovered": 109
+   },
+   "Healthy": {
+    "tau": 0.5,
+    "n_pop": 23767,
+    "A": 20663,
+    "B": 351,
+    "C_uncovered": 2753
+   },
+   "Impacted": {
+    "tau": 0.99,
+    "n_pop": 1833,
+    "A": 408,
+    "B": 1425,
+    "C_uncovered": 0
+   },
+   "Implant": {
+    "tau": 0.5,
+    "n_pop": 402,
+    "A": 184,
+    "B": 89,
+    "C_uncovered": 129
+   }
+  },
+  "n_reviewed": 1284,
+  "n_reader_disagreements_excluded": 0,
+  "n_out_of_scope_excluded": 0,
+  "weights": {
+   "Endodontics|A": 10.2,
+   "Endodontics|B": 14.2,
+   "Healthy|A": 82.652,
+   "Healthy|B": 7.02,
+   "Impacted|A": 1.02,
+   "Impacted|B": 28.5,
+   "Implant|A": 1.0,
+   "Implant|B": 1.78
+  },
+  "precision_at_review_tau": {
+   "Endodontics": {
+    "estimate": 0.49200000000000166,
+    "ci95": [
+     0.4291197975253108,
+     0.558849080172611
+    ],
+    "est_population": 2549.9999999999973
+   },
+   "Healthy": {
+    "estimate": 0.832000000000003,
+    "ci95": [
+     0.782604546963162,
+     0.876603927986909
+    ],
+    "est_population": 20662.999999999916
+   },
+   "Impacted": {
+    "estimate": 0.9125000000000012,
+    "ci95": [
+     0.8858346683231453,
+     0.9393366725328287
+    ],
+    "est_population": 407.9999999999984
+   },
+   "Implant": {
+    "estimate": 0.40217391304347827,
+    "ci95": [
+     0.28841463414634144,
+     0.5135687574366818
+    ],
+    "est_population": 184.0
+   }
+  },
+  "precision_lenient": {
+   "Endodontics": 0.49200000000000166,
+   "Healthy": 0.832000000000003,
+   "Impacted": 0.9125000000000012,
+   "Implant": 0.45652173913043476
+  },
+  "precision_vs_threshold": {
+   "0.5": {
+    "precision": {
+     "Endodontics": 0.4075961956859603,
+     "Healthy": 0.832000000000003,
+     "Impacted": 0.5787162162162158,
+     "Implant": 0.40217391304347827
+    },
+    "est_predictions_kept": {
+     "Endodontics": 3217.3999999999864,
+     "Healthy": 20662.999999999916,
+     "Impacted": 1775.9999999999936,
+     "Implant": 184.0
+    }
+   },
+   "0.6": {
+    "precision": {
+     "Endodontics": 0.45271700776288154,
+     "Healthy": 0.832000000000003,
+     "Impacted": 0.6012635379061368,
+     "Implant": 0.4180790960451977
+    },
+    "est_predictions_kept": {
+     "Endodontics": 2833.9999999999927,
+     "Healthy": 20662.999999999916,
+     "Impacted": 1661.9999999999936,
+     "Implant": 177.0
+    }
+   },
+   "0.7": {
+    "precision": {
+     "Endodontics": 0.49200000000000166,
+     "Healthy": 0.8436213991769576,
+     "Impacted": 0.6490909090909087,
+     "Implant": 0.47058823529411764
+    },
+    "est_predictions_kept": {
+     "Endodontics": 2549.9999999999973,
+     "Healthy": 20084.43599999993,
+     "Impacted": 1319.999999999994,
+     "Implant": 153.0
+    }
+   },
+   "0.8": {
+    "precision": {
+     "Endodontics": 0.5333333333333341,
+     "Healthy": 0.8666666666666688,
+     "Impacted": 0.6631840796019897,
+     "Implant": 0.5772357723577236
+    },
+    "est_predictions_kept": {
+     "Endodontics": 2295.000000000002,
+     "Healthy": 18596.69999999996,
+     "Impacted": 1205.999999999994,
+     "Implant": 123.0
+    }
+   },
+   "0.9": {
+    "precision": {
+     "Endodontics": 0.6187845303867398,
+     "Healthy": 0.8717948717948718,
+     "Impacted": 0.6716502115655845,
+     "Implant": 0.7171717171717171
+    },
+    "est_predictions_kept": {
+     "Endodontics": 1846.2000000000055,
+     "Healthy": 16117.140000000007,
+     "Impacted": 1063.4999999999948,
+     "Implant": 99.0
+    }
+   },
+   "0.95": {
+    "precision": {
+     "Endodontics": 0.7202797202797198,
+     "Healthy": 0.8896103896103896,
+     "Impacted": 0.7526032315978449,
+     "Implant": 0.7888888888888889
+    },
+    "est_predictions_kept": {
+     "Endodontics": 1458.6000000000038,
+     "Healthy": 12728.408000000005,
+     "Impacted": 835.4999999999951,
+     "Implant": 90.0
+    }
+   },
+   "0.97": {
+    "precision": {
+     "Endodontics": 0.8288288288288285,
+     "Healthy": 0.8849557522123893,
+     "Impacted": 0.8176072234762979,
+     "Implant": 0.8765432098765432
+    },
+    "est_predictions_kept": {
+     "Endodontics": 1132.2000000000023,
+     "Healthy": 9339.676000000003,
+     "Impacted": 664.4999999999964,
+     "Implant": 81.0
+    }
+   },
+   "0.99": {
+    "precision": {
+     "Endodontics": 0.9199999999999997,
+     "Healthy": 0.9047619047619048,
+     "Impacted": 0.9125000000000012,
+     "Implant": 0.9452054794520548
+    },
+    "est_predictions_kept": {
+     "Endodontics": 765.0000000000007,
+     "Healthy": 3471.3840000000014,
+     "Impacted": 407.9999999999984,
+     "Implant": 73.0
+    }
+   },
+   "0.995": {
+    "precision": {
+     "Endodontics": 0.9400000000000001,
+     "Healthy": 0.9090909090909091,
+     "Impacted": 0.96734693877551,
+     "Implant": 0.9444444444444444
+    },
+    "est_predictions_kept": {
+     "Endodontics": 509.9999999999996,
+     "Healthy": 909.1720000000001,
+     "Impacted": 249.90000000000106,
+     "Implant": 72.0
+    }
+   }
+  },
+  "wrong_flags_per_radiograph": {
+   "0.5": 2.5906279287722542,
+   "0.6": 2.171227741330835,
+   "0.7": 1.724086223055298,
+   "0.8": 1.4331771321462066,
+   "0.9": 1.0131208997188386,
+   "0.95": 0.5939081537019678,
+   "0.97": 0.3045923149015933,
+   "0.99": 0.09456419868791006,
+   "0.995": 0.04007497656982194
+  }
+ }
+}

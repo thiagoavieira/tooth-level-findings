@@ -1,0 +1,93 @@
+{
+ "tufts": {
+  "n_all": 1248,
+  "n_double": 508,
+  "prevalence_bias_all7": {
+   "Endodontics": {
+    "prevalence_index": 0.8366141732283464,
+    "bias_index": 0.017716535433070866
+   },
+   "Healthy": {
+    "prevalence_index": 0.6062992125984252,
+    "bias_index": 0.027559055118110236
+   },
+   "Impacted": {
+    "prevalence_index": 0.46653543307086615,
+    "bias_index": 0.00984251968503937
+   },
+   "Implant": {
+    "prevalence_index": 0.6771653543307087,
+    "bias_index": 0.0
+   },
+   "Other": {
+    "prevalence_index": 0.5531496062992126,
+    "bias_index": 0.00984251968503937
+   },
+   "Exclude": {
+    "prevalence_index": 0.9350393700787402,
+    "bias_index": 0.005905511811023622
+   },
+   "Bad crop": {
+    "prevalence_index": 0.9251968503937008,
+    "bias_index": 0.01968503937007874
+   }
+  },
+  "highest_prevalence_index": {
+   "category": "Exclude",
+   "prevalence_index": 0.9350393700787402,
+   "bias_index": 0.005905511811023622
+  },
+  "largest_bias_index": [
+   "Healthy",
+   0.027559055118110236
+  ],
+  "krippendorff_alpha_all_units": 0.8398939446868886,
+  "krippendorff_alpha_double_only": 0.8387663544203868,
+  "reader_marginals": {
+   "9": {
+    "Other": 203,
+    "Implant": 152,
+    "Impacted": 222,
+    "Healthy": 217,
+    "Bad crop": 33,
+    "Endodontics": 76,
+    "Exclude": 67
+   },
+   "10": {
+    "Other": 195,
+    "Implant": 127,
+    "Impacted": 208,
+    "Healthy": 147,
+    "Bad crop": 30,
+    "Endodontics": 51,
+    "Exclude": 28
+   }
+  }
+ },
+ "dentex": {
+  "n_all": 1284,
+  "n_double": 0,
+  "krippendorff_alpha_all_units": null,
+  "krippendorff_alpha_double_only": null,
+  "reader_marginals": {
+   "10": {
+    "Impacted": 254,
+    "Healthy": 242,
+    "Other": 137,
+    "Endodontics": 86,
+    "Implant": 40,
+    "Bad crop": 15,
+    "Exclude": 25
+   },
+   "9": {
+    "Healthy": 146,
+    "Endodontics": 51,
+    "Impacted": 135,
+    "Other": 77,
+    "Exclude": 30,
+    "Implant": 35,
+    "Bad crop": 11
+   }
+  }
+ }
+}

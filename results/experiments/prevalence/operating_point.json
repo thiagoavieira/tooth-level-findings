@@ -1,0 +1,442 @@
+{
+ "inception_v3__paper_s1.0": [
+  {
+   "tau": 0.0,
+   "false_flags_per_exam": 0.5052816901408451,
+   "share_exams_zero": 0.6813380281690141,
+   "recall": {
+    "Endodontics": 0.9692982456140351,
+    "Impacted": 0.9774436090225563,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.34759358288770054,
+   "n_sound_flagged": 287
+  },
+  {
+   "tau": 0.5,
+   "false_flags_per_exam": 0.4841549295774648,
+   "share_exams_zero": 0.6919014084507042,
+   "recall": {
+    "Endodontics": 0.9649122807017544,
+    "Impacted": 0.9774436090225563,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.35911602209944754,
+   "n_sound_flagged": 275
+  },
+  {
+   "tau": 0.6,
+   "false_flags_per_exam": 0.36971830985915494,
+   "share_exams_zero": 0.7535211267605634,
+   "recall": {
+    "Endodontics": 0.956140350877193,
+    "Impacted": 0.9624060150375939,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.41830065359477125,
+   "n_sound_flagged": 210
+  },
+  {
+   "tau": 0.7,
+   "false_flags_per_exam": 0.22711267605633803,
+   "share_exams_zero": 0.8380281690140845,
+   "recall": {
+    "Endodontics": 0.9407894736842105,
+    "Impacted": 0.924812030075188,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.5168067226890757,
+   "n_sound_flagged": 129
+  },
+  {
+   "tau": 0.8,
+   "false_flags_per_exam": 0.1602112676056338,
+   "share_exams_zero": 0.8820422535211268,
+   "recall": {
+    "Endodontics": 0.9199561403508771,
+    "Impacted": 0.9097744360902256,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.5960591133004927,
+   "n_sound_flagged": 91
+  },
+  {
+   "tau": 0.85,
+   "false_flags_per_exam": 0.13380281690140844,
+   "share_exams_zero": 0.8961267605633803,
+   "recall": {
+    "Endodontics": 0.9089912280701754,
+    "Impacted": 0.8872180451127819,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.6310160427807486,
+   "n_sound_flagged": 76
+  },
+  {
+   "tau": 0.9,
+   "false_flags_per_exam": 0.1056338028169014,
+   "share_exams_zero": 0.9102112676056338,
+   "recall": {
+    "Endodontics": 0.8914473684210527,
+    "Impacted": 0.8721804511278195,
+    "Implant": 0.9818181818181818
+   },
+   "precision_impacted": 0.6823529411764706,
+   "n_sound_flagged": 60
+  },
+  {
+   "tau": 0.95,
+   "false_flags_per_exam": 0.07922535211267606,
+   "share_exams_zero": 0.9295774647887324,
+   "recall": {
+    "Endodontics": 0.8673245614035088,
+    "Impacted": 0.8270676691729323,
+    "Implant": 0.9818181818181818
+   },
+   "precision_impacted": 0.7236842105263158,
+   "n_sound_flagged": 45
+  },
+  {
+   "tau": 0.99,
+   "false_flags_per_exam": 0.028169014084507043,
+   "share_exams_zero": 0.9735915492957746,
+   "recall": {
+    "Endodontics": 0.7763157894736842,
+    "Impacted": 0.7368421052631579,
+    "Implant": 0.9636363636363636
+   },
+   "precision_impacted": 0.875,
+   "n_sound_flagged": 16
+  }
+ ],
+ "deit_small_patch16_224__paper_s1.0": [
+  {
+   "tau": 0.0,
+   "false_flags_per_exam": 0.45598591549295775,
+   "share_exams_zero": 0.6971830985915493,
+   "recall": {
+    "Endodontics": 0.9682017543859649,
+    "Impacted": 0.9849624060150376,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.39939024390243905,
+   "n_sound_flagged": 259
+  },
+  {
+   "tau": 0.5,
+   "false_flags_per_exam": 0.4278169014084507,
+   "share_exams_zero": 0.7130281690140845,
+   "recall": {
+    "Endodontics": 0.9660087719298246,
+    "Impacted": 0.9774436090225563,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.41009463722397477,
+   "n_sound_flagged": 243
+  },
+  {
+   "tau": 0.6,
+   "false_flags_per_exam": 0.3221830985915493,
+   "share_exams_zero": 0.7746478873239436,
+   "recall": {
+    "Endodontics": 0.9550438596491229,
+    "Impacted": 0.9699248120300752,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.4657039711191336,
+   "n_sound_flagged": 183
+  },
+  {
+   "tau": 0.7,
+   "false_flags_per_exam": 0.2147887323943662,
+   "share_exams_zero": 0.8380281690140845,
+   "recall": {
+    "Endodontics": 0.9353070175438597,
+    "Impacted": 0.9624060150375939,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.540084388185654,
+   "n_sound_flagged": 122
+  },
+  {
+   "tau": 0.8,
+   "false_flags_per_exam": 0.1602112676056338,
+   "share_exams_zero": 0.8714788732394366,
+   "recall": {
+    "Endodontics": 0.9177631578947368,
+    "Impacted": 0.9398496240601504,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.6067961165048543,
+   "n_sound_flagged": 91
+  },
+  {
+   "tau": 0.85,
+   "false_flags_per_exam": 0.12147887323943662,
+   "share_exams_zero": 0.8943661971830986,
+   "recall": {
+    "Endodontics": 0.9089912280701754,
+    "Impacted": 0.9323308270676691,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.6739130434782609,
+   "n_sound_flagged": 69
+  },
+  {
+   "tau": 0.9,
+   "false_flags_per_exam": 0.09859154929577464,
+   "share_exams_zero": 0.9137323943661971,
+   "recall": {
+    "Endodontics": 0.8903508771929824,
+    "Impacted": 0.8721804511278195,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.6946107784431138,
+   "n_sound_flagged": 56
+  },
+  {
+   "tau": 0.95,
+   "false_flags_per_exam": 0.06690140845070422,
+   "share_exams_zero": 0.9436619718309859,
+   "recall": {
+    "Endodontics": 0.8421052631578947,
+    "Impacted": 0.8270676691729323,
+    "Implant": 0.9818181818181818
+   },
+   "precision_impacted": 0.7638888888888888,
+   "n_sound_flagged": 38
+  },
+  {
+   "tau": 0.99,
+   "false_flags_per_exam": 0.00528169014084507,
+   "share_exams_zero": 0.9947183098591549,
+   "recall": {
+    "Endodontics": 0.6282894736842105,
+    "Impacted": 0.6015037593984962,
+    "Implant": 0.9454545454545454
+   },
+   "precision_impacted": 0.963855421686747,
+   "n_sound_flagged": 3
+  }
+ ],
+ "deit_small_patch16_224__posneg_s1.0": [
+  {
+   "tau": 0.0,
+   "false_flags_per_exam": 0.272887323943662,
+   "share_exams_zero": 0.7852112676056338,
+   "recall": {
+    "Endodontics": 0.981359649122807,
+    "Impacted": 0.9624060150375939,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.6037735849056604,
+   "n_sound_flagged": 155
+  },
+  {
+   "tau": 0.5,
+   "false_flags_per_exam": 0.272887323943662,
+   "share_exams_zero": 0.7852112676056338,
+   "recall": {
+    "Endodontics": 0.9802631578947368,
+    "Impacted": 0.9624060150375939,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.6037735849056604,
+   "n_sound_flagged": 155
+  },
+  {
+   "tau": 0.6,
+   "false_flags_per_exam": 0.21830985915492956,
+   "share_exams_zero": 0.8204225352112676,
+   "recall": {
+    "Endodontics": 0.9758771929824561,
+    "Impacted": 0.9548872180451128,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.6614583333333334,
+   "n_sound_flagged": 124
+  },
+  {
+   "tau": 0.7,
+   "false_flags_per_exam": 0.17077464788732394,
+   "share_exams_zero": 0.8538732394366197,
+   "recall": {
+    "Endodontics": 0.9671052631578947,
+    "Impacted": 0.9323308270676691,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.6966292134831461,
+   "n_sound_flagged": 97
+  },
+  {
+   "tau": 0.8,
+   "false_flags_per_exam": 0.12147887323943662,
+   "share_exams_zero": 0.8943661971830986,
+   "recall": {
+    "Endodontics": 0.9572368421052632,
+    "Impacted": 0.9022556390977443,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.7407407407407407,
+   "n_sound_flagged": 69
+  },
+  {
+   "tau": 0.85,
+   "false_flags_per_exam": 0.09507042253521127,
+   "share_exams_zero": 0.9172535211267606,
+   "recall": {
+    "Endodontics": 0.9473684210526315,
+    "Impacted": 0.8947368421052632,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.7828947368421053,
+   "n_sound_flagged": 54
+  },
+  {
+   "tau": 0.9,
+   "false_flags_per_exam": 0.07394366197183098,
+   "share_exams_zero": 0.9278169014084507,
+   "recall": {
+    "Endodontics": 0.9320175438596491,
+    "Impacted": 0.8796992481203008,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.8357142857142857,
+   "n_sound_flagged": 42
+  },
+  {
+   "tau": 0.95,
+   "false_flags_per_exam": 0.045774647887323945,
+   "share_exams_zero": 0.9559859154929577,
+   "recall": {
+    "Endodontics": 0.9002192982456141,
+    "Impacted": 0.8646616541353384,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.8778625954198473,
+   "n_sound_flagged": 26
+  },
+  {
+   "tau": 0.99,
+   "false_flags_per_exam": 0.01056338028169014,
+   "share_exams_zero": 0.9894366197183099,
+   "recall": {
+    "Endodontics": 0.7774122807017544,
+    "Impacted": 0.7218045112781954,
+    "Implant": 0.9636363636363636
+   },
+   "precision_impacted": 0.9504950495049505,
+   "n_sound_flagged": 6
+  }
+ ],
+ "deit_small_patch16_224__posneg_s1.0_prior": [
+  {
+   "tau": 0.0,
+   "false_flags_per_exam": 0.1443661971830986,
+   "share_exams_zero": 0.8838028169014085,
+   "recall": {
+    "Endodontics": 0.9736842105263158,
+    "Impacted": 0.9624060150375939,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.6918918918918919,
+   "n_sound_flagged": 82
+  },
+  {
+   "tau": 0.5,
+   "false_flags_per_exam": 0.1443661971830986,
+   "share_exams_zero": 0.8838028169014085,
+   "recall": {
+    "Endodontics": 0.9714912280701754,
+    "Impacted": 0.9624060150375939,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.6918918918918919,
+   "n_sound_flagged": 82
+  },
+  {
+   "tau": 0.6,
+   "false_flags_per_exam": 0.11267605633802817,
+   "share_exams_zero": 0.903169014084507,
+   "recall": {
+    "Endodontics": 0.9638157894736842,
+    "Impacted": 0.9624060150375939,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.7314285714285714,
+   "n_sound_flagged": 64
+  },
+  {
+   "tau": 0.7,
+   "false_flags_per_exam": 0.09330985915492958,
+   "share_exams_zero": 0.9190140845070423,
+   "recall": {
+    "Endodontics": 0.9517543859649122,
+    "Impacted": 0.924812030075188,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.75,
+   "n_sound_flagged": 53
+  },
+  {
+   "tau": 0.8,
+   "false_flags_per_exam": 0.0721830985915493,
+   "share_exams_zero": 0.9366197183098591,
+   "recall": {
+    "Endodontics": 0.9342105263157895,
+    "Impacted": 0.9022556390977443,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.7792207792207793,
+   "n_sound_flagged": 41
+  },
+  {
+   "tau": 0.85,
+   "false_flags_per_exam": 0.058098591549295774,
+   "share_exams_zero": 0.9507042253521126,
+   "recall": {
+    "Endodontics": 0.9155701754385965,
+    "Impacted": 0.8872180451127819,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.7972972972972973,
+   "n_sound_flagged": 33
+  },
+  {
+   "tau": 0.9,
+   "false_flags_per_exam": 0.04753521126760563,
+   "share_exams_zero": 0.9559859154929577,
+   "recall": {
+    "Endodontics": 0.8914473684210527,
+    "Impacted": 0.8721804511278195,
+    "Implant": 1.0
+   },
+   "precision_impacted": 0.8285714285714286,
+   "n_sound_flagged": 27
+  },
+  {
+   "tau": 0.95,
+   "false_flags_per_exam": 0.035211267605633804,
+   "share_exams_zero": 0.9647887323943662,
+   "recall": {
+    "Endodontics": 0.8366228070175439,
+    "Impacted": 0.849624060150376,
+    "Implant": 0.9636363636363636
+   },
+   "precision_impacted": 0.8560606060606061,
+   "n_sound_flagged": 20
+  },
+  {
+   "tau": 0.99,
+   "false_flags_per_exam": 0.017605633802816902,
+   "share_exams_zero": 0.9823943661971831,
+   "recall": {
+    "Endodontics": 0.5032894736842105,
+    "Impacted": 0.7593984962406015,
+    "Implant": 0.7818181818181819
+   },
+   "precision_impacted": 0.9099099099099099,
+   "n_sound_flagged": 10
+  }
+ ]
+}

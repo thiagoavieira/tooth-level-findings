@@ -1,0 +1,15 @@
+{
+  "mode": "cv",
+  "enhancement": "none",
+  "aug": "noaug",
+  "arch": "tf_efficientnetv2_s",
+  "fold": 4,
+  "seed": 0,
+  "run_id": "none__noaug__tf_efficientnetv2_s__fold4__seed0",
+  "run_dir": "runs/none__noaug__tf_efficientnetv2_s__fold4__seed0",
+  "batch": 32,
+  "lr": 0.0001,
+  "epochs": 150,
+  "patience": 20,
+  "workers": 6
+}

@@ -1,0 +1,474 @@
+{
+ "all_classes_at_own_tau": {
+  "per_dataset": {
+   "tufts": {
+    "Endodontics": {
+     "tau": 0.7,
+     "in_scope": 0.8999999999999999,
+     "confirmed_per_1k_teeth": 20.52847605667861,
+     "fp_per_1k_teeth": 2.2809417840754023,
+     "confirmed_pct_of_teeth_tau05": 2.1270145862174736
+    },
+    "Healthy": {
+     "tau": 0.5,
+     "in_scope": 0.9942528735632183,
+     "confirmed_per_1k_teeth": 515.1284898751162,
+     "fp_per_1k_teeth": 2.9776213287578956,
+     "confirmed_pct_of_teeth_tau05": 51.512848987511624
+    },
+    "Impacted": {
+     "tau": 0.99,
+     "in_scope": 0.9816176470588236,
+     "confirmed_per_1k_teeth": 11.492522912536943,
+     "fp_per_1k_teeth": 0.21521578487896786,
+     "confirmed_pct_of_teeth_tau05": 3.900554849344895
+    },
+    "Implant": {
+     "tau": 0.5,
+     "in_scope": 0.8944954128440367,
+     "confirmed_per_1k_teeth": 8.205567734394775,
+     "fp_per_1k_teeth": 0.9678361943132301,
+     "confirmed_pct_of_teeth_tau05": 0.8205567734394774
+    }
+   },
+   "dentex": {
+    "Endodontics": {
+     "tau": 0.7,
+     "in_scope": 0.9609375000000001,
+     "confirmed_per_1k_teeth": 42.715603826904186,
+     "fp_per_1k_teeth": 1.7364066596302474,
+     "confirmed_pct_of_teeth_tau05": 4.464948418508062
+    },
+    "Healthy": {
+     "tau": 0.5,
+     "in_scope": 0.9952153110047848,
+     "confirmed_per_1k_teeth": 585.3262061216844,
+     "fp_per_1k_teeth": 2.8140682986619456,
+     "confirmed_pct_of_teeth_tau05": 58.53262061216844
+    },
+    "Impacted": {
+     "tau": 0.99,
+     "in_scope": 0.9580052493438319,
+     "confirmed_per_1k_teeth": 12.675768615300775,
+     "fp_per_1k_teeth": 0.555650131081679,
+     "confirmed_pct_of_teeth_tau05": 3.4993701269960016
+    },
+    "Implant": {
+     "tau": 0.5,
+     "in_scope": 0.48366013071895425,
+     "confirmed_per_1k_teeth": 2.519492015934085,
+     "fp_per_1k_teeth": 2.689727962956658,
+     "confirmed_pct_of_teeth_tau05": 0.25194920159340845
+    }
+   }
+  },
+  "standardisation_shift": {
+   "Endodontics": {
+    "dentex_observed": 0.9609375000000001,
+    "dentex_at_tufts_prevalence": 0.922011416733925,
+    "shift_points": -3.892608326607516,
+    "confirmed_pct_of_teeth_at_own_tau": {
+     "tufts": 2.052847605667861,
+     "dentex": 4.271560382690419
+    },
+    "confirmed_pct_of_teeth_tau05": {
+     "tufts": 2.1270145862174736,
+     "dentex": 4.464948418508062
+    }
+   },
+   "Healthy": {
+    "dentex_observed": 0.9952153110047848,
+    "dentex_at_tufts_prevalence": 0.9945668332245489,
+    "shift_points": -0.06484777802359121,
+    "confirmed_pct_of_teeth_at_own_tau": {
+     "tufts": 51.51284898751162,
+     "dentex": 58.532620612168444
+    },
+    "confirmed_pct_of_teeth_tau05": {
+     "tufts": 51.512848987511624,
+     "dentex": 58.53262061216844
+    }
+   },
+   "Impacted": {
+    "dentex_observed": 0.9580052493438319,
+    "dentex_at_tufts_prevalence": 0.9538809636058487,
+    "shift_points": -0.412428573798318,
+    "confirmed_pct_of_teeth_at_own_tau": {
+     "tufts": 1.1492522912536942,
+     "dentex": 1.2675768615300775
+    },
+    "confirmed_pct_of_teeth_tau05": {
+     "tufts": 3.900554849344895,
+     "dentex": 3.4993701269960016
+    }
+   },
+   "Implant": {
+    "dentex_observed": 0.48366013071895425,
+    "dentex_at_tufts_prevalence": 0.7531294204699271,
+    "shift_points": 26.94692897509729,
+    "confirmed_pct_of_teeth_at_own_tau": {
+     "tufts": 0.8205567734394774,
+     "dentex": 0.2519492015934085
+    },
+    "confirmed_pct_of_teeth_tau05": {
+     "tufts": 0.8205567734394774,
+     "dentex": 0.25194920159340845
+    }
+   }
+  }
+ },
+ "datasets": {
+  "tufts": {
+   "n_teeth": 23956,
+   "n_radiographs": 1000,
+   "n_implant_predictions": 386,
+   "population_by_bin": {
+    "<0.70": 129,
+    ">=0.99": 212,
+    "0.70-0.90": 31,
+    "0.90-0.99": 14
+   },
+   "share_at_or_above_0.99": 0.5492227979274611,
+   "n_reviewed": 294,
+   "review_coverage": 0.7616580310880829,
+   "mean_score_confirmed": 0.9945433673469387,
+   "mean_score_corrected": 0.5842656716417911,
+   "radiographs_with_a_true_implant": 73,
+   "radiographs_with_a_false_flag": 38,
+   "crop_geometry": {
+    "true": {
+     "n": 196,
+     "median_aspect_ratio": 2.7639318885448914
+    },
+    "false_sound": {
+     "n": 27,
+     "median_aspect_ratio": 3.259259259259259
+    }
+   },
+   "curve": [
+    {
+     "tau": 0.5,
+     "precision_deployed": 0.7862903225806451,
+     "precision_in_scope": 0.8944954128440367,
+     "tp": 196.57258064516122,
+     "fp_wrong_class": 23.18548387096774,
+     "fp_outside": 3.024193548387097,
+     "fp_unusable": 27.21774193548387,
+     "tp_per_1k_teeth": 8.205567734394775,
+     "fp_per_1k_teeth": 0.9678361943132301,
+     "fp_per_radiograph": 0.02318548387096774,
+     "ci95_in_scope": [
+      0.8395650305576777,
+      0.9356094833880978
+     ],
+     "ci95_fp_per_1k": [
+      0.5470378489596518,
+      1.3896865355301913
+     ]
+    },
+    {
+     "tau": 0.7,
+     "precision_deployed": 0.8158995815899581,
+     "precision_in_scope": 0.9154929577464788,
+     "tp": 196.57258064516122,
+     "fp_wrong_class": 18.14516129032258,
+     "fp_outside": 1.0080645161290323,
+     "fp_unusable": 25.201612903225804,
+     "tp_per_1k_teeth": 8.205567734394775,
+     "fp_per_1k_teeth": 0.757437021636441,
+     "fp_per_radiograph": 0.01814516129032258,
+     "ci95_in_scope": [
+      0.8680952380952383,
+      0.954956081081081
+     ],
+     "ci95_fp_per_1k": [
+      0.3787185108182205,
+      1.1782353669900192
+     ]
+    },
+    {
+     "tau": 0.8,
+     "precision_deployed": 0.8297872340425532,
+     "precision_in_scope": 0.9285714285714285,
+     "tp": 196.57258064516122,
+     "fp_wrong_class": 15.120967741935482,
+     "fp_outside": 1.0080645161290323,
+     "fp_unusable": 24.193548387096772,
+     "tp_per_1k_teeth": 8.205567734394775,
+     "fp_per_1k_teeth": 0.6311975180303675,
+     "fp_per_radiograph": 0.015120967741935483,
+     "ci95_in_scope": [
+      0.8835800085800086,
+      0.9634160262835505
+     ],
+     "ci95_fp_per_1k": [
+      0.2945588417475048,
+      1.009916028848588
+     ]
+    },
+    {
+     "tau": 0.9,
+     "precision_deployed": 0.8622222222222222,
+     "precision_in_scope": 0.9603960396039604,
+     "tp": 195.5645161290322,
+     "fp_wrong_class": 8.064516129032258,
+     "fp_outside": 1.0080645161290323,
+     "fp_unusable": 22.177419354838708,
+     "tp_per_1k_teeth": 8.163487899859417,
+     "fp_per_1k_teeth": 0.33663867628286265,
+     "fp_per_radiograph": 0.008064516129032258,
+     "ci95_in_scope": [
+      0.9271800368506838,
+      0.9841269841269841
+     ],
+     "ci95_fp_per_1k": [
+      0.1262395036060735,
+      0.5891176834950096
+     ]
+    },
+    {
+     "tau": 0.95,
+     "precision_deployed": 0.8818181818181818,
+     "precision_in_scope": 0.9797979797979798,
+     "tp": 195.5645161290322,
+     "fp_wrong_class": 4.032258064516129,
+     "fp_outside": 1.0080645161290323,
+     "fp_unusable": 21.169354838709676,
+     "tp_per_1k_teeth": 8.163487899859417,
+     "fp_per_1k_teeth": 0.16831933814143132,
+     "fp_per_radiograph": 0.004032258064516129,
+     "ci95_in_scope": [
+      0.9567255434782609,
+      0.9956149885583524
+     ],
+     "ci95_fp_per_1k": [
+      0.04207983453535783,
+      0.33663867628286265
+     ]
+    },
+    {
+     "tau": 0.99,
+     "precision_deployed": 0.895734597156398,
+     "precision_in_scope": 0.9895287958115182,
+     "tp": 190.52419354838707,
+     "fp_wrong_class": 2.0161290322580645,
+     "fp_outside": 1.0080645161290323,
+     "fp_unusable": 19.153225806451612,
+     "tp_per_1k_teeth": 7.953088727182629,
+     "fp_per_1k_teeth": 0.08415966907071566,
+     "fp_per_radiograph": 0.0020161290322580645,
+     "ci95_in_scope": [
+      0.9733288590604028,
+      1.0
+     ],
+     "ci95_fp_per_1k": [
+      0.0,
+      0.21039917267678915
+     ]
+    }
+   ]
+  },
+  "dentex": {
+   "n_teeth": 29371,
+   "n_radiographs": 1067,
+   "n_implant_predictions": 402,
+   "population_by_bin": {
+    "<0.70": 237,
+    "0.70-0.90": 66,
+    "0.90-0.99": 26,
+    ">=0.99": 73
+   },
+   "share_at_or_above_0.99": 0.18159203980099503,
+   "n_reviewed": 234,
+   "review_coverage": 0.582089552238806,
+   "mean_score_confirmed": 0.977208,
+   "mean_score_corrected": 0.670885294117647,
+   "radiographs_with_a_true_implant": 32,
+   "radiographs_with_a_false_flag": 76,
+   "crop_geometry": {
+    "true": {
+     "n": 75,
+     "median_aspect_ratio": 2.2916666666666665
+    },
+    "false_sound": {
+     "n": 102,
+     "median_aspect_ratio": 3.5879094793479984
+    }
+   },
+   "curve": [
+    {
+     "tau": 0.5,
+     "precision_deployed": 0.40217391304347827,
+     "precision_in_scope": 0.48366013071895425,
+     "tp": 74.0,
+     "fp_wrong_class": 79.0,
+     "fp_outside": 12.0,
+     "fp_unusable": 19.0,
+     "tp_per_1k_teeth": 2.519492015934085,
+     "fp_per_1k_teeth": 2.689727962956658,
+     "fp_per_radiograph": 0.07403936269915651,
+     "ci95_in_scope": [
+      0.35165196471531673,
+      0.6100277777777777
+     ],
+     "ci95_fp_per_1k": [
+      1.9406897960573355,
+      3.5068605086650098
+     ]
+    },
+    {
+     "tau": 0.7,
+     "precision_deployed": 0.47058823529411764,
+     "precision_in_scope": 0.5538461538461539,
+     "tp": 72.0,
+     "fp_wrong_class": 58.0,
+     "fp_outside": 7.0,
+     "fp_unusable": 16.0,
+     "tp_per_1k_teeth": 2.4513976371250554,
+     "fp_per_1k_teeth": 1.9747369854618502,
+     "fp_per_radiograph": 0.05435801312089972,
+     "ci95_in_scope": [
+      0.40658482142857144,
+      0.6884087669280113
+     ],
+     "ci95_fp_per_1k": [
+      1.3618875761805862,
+      2.6556807735521435
+     ]
+    },
+    {
+     "tau": 0.8,
+     "precision_deployed": 0.5772357723577236,
+     "precision_in_scope": 0.6513761467889908,
+     "tp": 71.0,
+     "fp_wrong_class": 38.0,
+     "fp_outside": 2.0,
+     "fp_unusable": 12.0,
+     "tp_per_1k_teeth": 2.4173504477205405,
+     "fp_per_1k_teeth": 1.293793197371557,
+     "fp_per_radiograph": 0.03561387066541706,
+     "ci95_in_scope": [
+      0.5061473844979,
+      0.7709946656856433
+     ],
+     "ci95_fp_per_1k": [
+      0.8511797351128665,
+      1.8045010384392768
+     ]
+    },
+    {
+     "tau": 0.9,
+     "precision_deployed": 0.7171717171717171,
+     "precision_in_scope": 0.7888888888888889,
+     "tp": 71.0,
+     "fp_wrong_class": 19.0,
+     "fp_outside": 2.0,
+     "fp_unusable": 7.0,
+     "tp_per_1k_teeth": 2.4173504477205405,
+     "fp_per_1k_teeth": 0.6468965986857785,
+     "fp_per_radiograph": 0.01780693533270853,
+     "ci95_in_scope": [
+      0.6626427789078392,
+      0.878274044795784
+     ],
+     "ci95_fp_per_1k": [
+      0.3745190834496612,
+      0.9533213033264104
+     ]
+    },
+    {
+     "tau": 0.95,
+     "precision_deployed": 0.7888888888888889,
+     "precision_in_scope": 0.8658536585365854,
+     "tp": 71.0,
+     "fp_wrong_class": 11.0,
+     "fp_outside": 1.0,
+     "fp_unusable": 7.0,
+     "tp_per_1k_teeth": 2.4173504477205405,
+     "fp_per_1k_teeth": 0.3745190834496612,
+     "fp_per_radiograph": 0.010309278350515464,
+     "ci95_in_scope": [
+      0.7557710636675562,
+      0.9375192901234568
+     ],
+     "ci95_fp_per_1k": [
+      0.17023594702257328,
+      0.6128494092812639
+     ]
+    },
+    {
+     "tau": 0.99,
+     "precision_deployed": 0.9452054794520548,
+     "precision_in_scope": 0.971830985915493,
+     "tp": 69.0,
+     "fp_wrong_class": 2.0,
+     "fp_outside": 0.0,
+     "fp_unusable": 2.0,
+     "tp_per_1k_teeth": 2.349256068911511,
+     "fp_per_1k_teeth": 0.06809437880902931,
+     "fp_per_radiograph": 0.0018744142455482662,
+     "ci95_in_scope": [
+      0.9253520135173191,
+      1.0
+     ],
+     "ci95_fp_per_1k": [
+      0.0,
+      0.17023594702257328
+     ]
+    }
+   ]
+  }
+ },
+ "prevalence_standardised": [
+  {
+   "tau": 0.5,
+   "dentex_observed_in_scope": 0.48366013071895425,
+   "dentex_at_tufts_prevalence": 0.7531294204699271,
+   "tufts_observed_in_scope": 0.8944954128440367,
+   "tufts_at_dentex_prevalence": 0.722470574616608
+  },
+  {
+   "tau": 0.7,
+   "dentex_observed_in_scope": 0.5538461538461539,
+   "dentex_at_tufts_prevalence": 0.8060237841790592,
+   "tufts_observed_in_scope": 0.9154929577464788,
+   "tufts_at_dentex_prevalence": 0.7639526176369628
+  },
+  {
+   "tau": 0.8,
+   "dentex_observed_in_scope": 0.6513761467889908,
+   "dentex_at_tufts_prevalence": 0.8638020803015234,
+   "tufts_observed_in_scope": 0.9285714285714285,
+   "tufts_at_dentex_prevalence": 0.7929514230638346
+  },
+  {
+   "tau": 0.9,
+   "dentex_observed_in_scope": 0.7888888888888889,
+   "dentex_at_tufts_prevalence": 0.9265756677483716,
+   "tufts_observed_in_scope": 0.9603960396039604,
+   "tufts_at_dentex_prevalence": 0.8777632513691631
+  },
+  {
+   "tau": 0.95,
+   "dentex_observed_in_scope": 0.8658536585365854,
+   "dentex_at_tufts_prevalence": 0.9561350694392957,
+   "tufts_observed_in_scope": 0.9797979797979798,
+   "tufts_at_dentex_prevalence": 0.9349030030587144
+  },
+  {
+   "tau": 0.99,
+   "dentex_observed_in_scope": 0.971830985915493,
+   "dentex_at_tufts_prevalence": 0.991510681415792,
+   "tufts_observed_in_scope": 0.9895287958115182,
+   "tufts_at_dentex_prevalence": 0.9654150058466785
+  }
+ ],
+ "implant_prevalence_pct_of_teeth": {
+  "tufts": 0.8205567734394774,
+  "dentex": 0.25194920159340845
+ },
+ "implants_per_radiograph": {
+  "tufts": 0.19657258064516123,
+  "dentex": 0.06935332708528585
+ }
+}

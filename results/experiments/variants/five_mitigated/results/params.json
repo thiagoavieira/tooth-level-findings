@@ -1,0 +1,9 @@
+{
+ "four_class": 21667204,
+ "five_class": 21667589,
+ "checkpoint_five_class_tensors": 21667589,
+ "head_shape_five": [
+  5,
+  384
+ ]
+}

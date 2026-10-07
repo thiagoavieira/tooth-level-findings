@@ -1,0 +1,350 @@
+{
+ "tufts": {
+  "corrections_by_confidence": {
+   "0.50-0.70": {
+    "reviewed": 50,
+    "confirmed": 8,
+    "corrected": 42
+   },
+   "0.70-0.90": {
+    "reviewed": 164,
+    "confirmed": 37,
+    "corrected": 127
+   },
+   "0.90-0.99": {
+    "reviewed": 237,
+    "confirmed": 150,
+    "corrected": 87
+   },
+   "0.99-1.00": {
+    "reviewed": 539,
+    "confirmed": 526,
+    "corrected": 13
+   }
+  },
+  "weighted_precision_by_confidence": {
+   "0.50-0.70": {
+    "est_predictions": 1350.6704783382695,
+    "precision": 0.29094630066338917
+   },
+   "0.70-0.90": {
+    "est_predictions": 4479.118442260112,
+    "precision": 0.4848086108400176
+   },
+   "0.90-0.99": {
+    "est_predictions": 10327.472682231963,
+    "precision": 0.8290465853959842
+   },
+   "0.99-1.00": {
+    "est_predictions": 2965.2474236079274,
+    "precision": 0.9626554140163558
+   }
+  },
+  "mean_confidence_confirmed": 0.9660005427408415,
+  "mean_confidence_corrected": 0.7519874635568512,
+  "cascade": {
+   "Endodontics": [
+    {
+     "step": "0. every prediction of the class",
+     "precision": 0.2183584529288573,
+     "est_population": 2333.5373897353634,
+     "coverage_of_class": 1.0,
+     "ci95": [
+      0.16567100962976541,
+      0.26591401991861413
+     ]
+    },
+    {
+     "step": "1. confidence >= tau, unanimous seeds",
+     "precision": 0.2903225806451616,
+     "est_population": 1693.909482758618,
+     "coverage_of_class": 0.725897725148821,
+     "ci95": [
+      0.22806149035956266,
+      0.3434457699163584
+     ]
+    },
+    {
+     "step": "2. - teeth outside the label space",
+     "precision": 0.9000000000000001,
+     "est_population": 546.422413793103,
+     "coverage_of_class": 0.23416055649961987,
+     "ci95": [
+      0.8253968253968257,
+      0.9682663690476191
+     ]
+    }
+   ],
+   "Healthy": [
+    {
+     "step": "0. every prediction of the class",
+     "precision": 0.8032799010469391,
+     "est_population": 15467.630513231788,
+     "coverage_of_class": 1.0,
+     "ci95": [
+      0.7441227732673342,
+      0.8576596711518546
+     ]
+    },
+    {
+     "step": "1. confidence >= tau, unanimous seeds",
+     "precision": 0.8084112149532701,
+     "est_population": 15265.025862068995,
+     "coverage_of_class": 0.9869013776228055,
+     "ci95": [
+      0.7476635514018679,
+      0.863451097457299
+     ]
+    },
+    {
+     "step": "2. - teeth outside the label space",
+     "precision": 0.9942528735632183,
+     "est_population": 12411.75000000001,
+     "coverage_of_class": 0.8024338304035886,
+     "ci95": [
+      0.9817016711833784,
+      1.0
+     ]
+    }
+   ],
+   "Impacted": [
+    {
+     "step": "0. every prediction of the class",
+     "precision": 0.6072546498611685,
+     "est_population": 1538.7563025210115,
+     "coverage_of_class": 1.0,
+     "ci95": [
+      0.4782277285245294,
+      0.7270057520742207
+     ]
+    },
+    {
+     "step": "1. confidence >= tau, unanimous seeds",
+     "precision": 0.9816176470588234,
+     "est_population": 280.4705882352956,
+     "coverage_of_class": 0.18227095984971006,
+     "ci95": [
+      0.9636948694869485,
+      0.9962966379663796
+     ]
+    },
+    {
+     "step": "2. - teeth outside the label space",
+     "precision": 0.9816176470588234,
+     "est_population": 280.4705882352956,
+     "coverage_of_class": 0.18227095984971006,
+     "ci95": [
+      0.9636948694869485,
+      0.9962966379663796
+     ]
+    }
+   ],
+   "Implant": [
+    {
+     "step": "0. every prediction of the class",
+     "precision": 0.7339265978372242,
+     "est_population": 269.34747545581985,
+     "coverage_of_class": 1.0,
+     "ci95": [
+      0.6531239141170282,
+      0.8039973243856461
+     ]
+    },
+    {
+     "step": "1. confidence >= tau, unanimous seeds",
+     "precision": 0.8823529411764713,
+     "est_population": 222.78225806451587,
+     "coverage_of_class": 0.8271184190143193,
+     "ci95": [
+      0.8265146683673482,
+      0.9246052500498111
+     ]
+    },
+    {
+     "step": "2. - teeth outside the label space",
+     "precision": 0.8944954128440373,
+     "est_population": 219.7580645161288,
+     "coverage_of_class": 0.815890567172496,
+     "ci95": [
+      0.8409062641338771,
+      0.9347122992088231
+     ]
+    }
+   ]
+  }
+ },
+ "dentex": {
+  "corrections_by_confidence": {
+   "0.50-0.70": {
+    "reviewed": 91,
+    "confirmed": 15,
+    "corrected": 76
+   },
+   "0.70-0.90": {
+    "reviewed": 161,
+    "confirmed": 52,
+    "corrected": 109
+   },
+   "0.90-0.99": {
+    "reviewed": 286,
+    "confirmed": 189,
+    "corrected": 97
+   },
+   "0.99-1.00": {
+    "reviewed": 568,
+    "confirmed": 541,
+    "corrected": 27
+   }
+  },
+  "weighted_precision_by_confidence": {
+   "0.50-0.70": {
+    "est_predictions": 1547.8120000000013,
+    "precision": 0.3086653934715583
+   },
+   "0.70-0.90": {
+    "est_predictions": 4471.735999999995,
+    "precision": 0.7040934437990086
+   },
+   "0.90-0.99": {
+    "est_predictions": 13433.084000000024,
+    "precision": 0.8704377937337391
+   },
+   "0.99-1.00": {
+    "est_predictions": 4440.908000000001,
+    "precision": 0.9650900221306087
+   }
+  },
+  "mean_confidence_confirmed": 0.9505597826086957,
+  "mean_confidence_corrected": 0.7525466666666666,
+  "cascade": {
+   "Endodontics": [
+    {
+     "step": "0. every prediction of the class",
+     "precision": 0.4267768810205701,
+     "est_population": 3072.799999999989,
+     "coverage_of_class": 1.0,
+     "ci95": [
+      0.36778056646223206,
+      0.4929591709703457
+     ]
+    },
+    {
+     "step": "1. confidence >= tau, unanimous seeds",
+     "precision": 0.5125000000000014,
+     "est_population": 2447.999999999999,
+     "coverage_of_class": 0.7966675344962275,
+     "ci95": [
+      0.4453675506900017,
+      0.5785596264367842
+     ]
+    },
+    {
+     "step": "2. - teeth outside the label space",
+     "precision": 0.9609374999999999,
+     "est_population": 1305.600000000003,
+     "coverage_of_class": 0.42488935173132253,
+     "ci95": [
+      0.920626293995859,
+      0.9921259842519685
+     ]
+    }
+   ],
+   "Healthy": [
+    {
+     "step": "0. every prediction of the class",
+     "precision": 0.8998089959100116,
+     "est_population": 19339.899999999958,
+     "coverage_of_class": 1.0,
+     "ci95": [
+      0.8595177640149816,
+      0.935707478840917
+     ]
+    },
+    {
+     "step": "1. confidence >= tau, unanimous seeds",
+     "precision": 0.9043478260869583,
+     "est_population": 19009.959999999952,
+     "coverage_of_class": 0.982939932471212,
+     "ci95": [
+      0.8630048797695354,
+      0.9401773049645401
+     ]
+    },
+    {
+     "step": "2. - teeth outside the label space",
+     "precision": 0.9952153110047848,
+     "est_population": 17274.26799999999,
+     "coverage_of_class": 0.8931932429847117,
+     "ci95": [
+      0.9846113989637305,
+      1.0
+     ]
+    }
+   ],
+   "Impacted": [
+    {
+     "step": "0. every prediction of the class",
+     "precision": 0.5936990954146878,
+     "est_population": 1731.179999999994,
+     "coverage_of_class": 1.0,
+     "ci95": [
+      0.48404076841885396,
+      0.7146093985393623
+     ]
+    },
+    {
+     "step": "1. confidence >= tau, unanimous seeds",
+     "precision": 0.950520833333334,
+     "est_population": 391.6799999999987,
+     "coverage_of_class": 0.22625030326135934,
+     "ci95": [
+      0.9263374790426097,
+      0.9703023385448468
+     ]
+    },
+    {
+     "step": "2. - teeth outside the label space",
+     "precision": 0.9580052493438327,
+     "est_population": 388.61999999999875,
+     "coverage_of_class": 0.22448272276713,
+     "ci95": [
+      0.9366969363419565,
+      0.9757597716293372
+     ]
+    }
+   ],
+   "Implant": [
+    {
+     "step": "0. every prediction of the class",
+     "precision": 0.3069507453013609,
+     "est_population": 246.88000000000005,
+     "coverage_of_class": 1.0,
+     "ci95": [
+      0.20906445764469828,
+      0.4129955957954751
+     ]
+    },
+    {
+     "step": "1. confidence >= tau, unanimous seeds",
+     "precision": 0.4484848484848485,
+     "est_population": 165.0,
+     "coverage_of_class": 0.668340894361633,
+     "ci95": [
+      0.32,
+      0.5733978683216406
+     ]
+    },
+    {
+     "step": "2. - teeth outside the label space",
+     "precision": 0.48366013071895425,
+     "est_population": 153.0,
+     "coverage_of_class": 0.6197342838626052,
+     "ci95": [
+      0.3461206896551724,
+      0.6111458333333334
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+  "mode": "test",
+  "enhancement": "msthgr",
+  "aug": "aug",
+  "arch": "vgg16",
+  "fold": -1,
+  "seed": 0,
+  "run_id": "msthgr__aug__vgg16__seed0",
+  "run_dir": "test/msthgr__aug__vgg16__seed0",
+  "batch": 32,
+  "lr": 0.0001,
+  "epochs": 150,
+  "patience": 20,
+  "workers": 6
+}

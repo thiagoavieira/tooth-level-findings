@@ -1,0 +1,15 @@
+{
+  "mode": "test",
+  "enhancement": "none",
+  "aug": "noaug",
+  "arch": "deit_small_patch16_224",
+  "fold": -1,
+  "seed": 0,
+  "run_id": "none__noaug__deit_small_patch16_224__seed0",
+  "run_dir": "test/none__noaug__deit_small_patch16_224__seed0",
+  "batch": 64,
+  "lr": 0.0001,
+  "epochs": 150,
+  "patience": 20,
+  "workers": 6
+}

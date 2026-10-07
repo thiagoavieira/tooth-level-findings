@@ -1,0 +1,7 @@
+{
+ "state": "done",
+ "best_val_macro_f1": 1.0,
+ "test_macro_f1": 0.9201518383156211,
+ "updated": "2026-08-17 16:06:10",
+ "gpu_mem_mb": 2067.3
+}

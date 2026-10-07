@@ -1,0 +1,86 @@
+{
+ "classes": [
+  "Endodontics",
+  "Healthy",
+  "Impacted",
+  "Implant"
+ ],
+ "n_patients": 193,
+ "prior": {
+  "incisor": [
+   0.06594399277326106,
+   0.9205058717253839,
+   0.0009033423667570009,
+   0.012646793134598013
+  ],
+  "canine": [
+   0.049069373942470386,
+   0.9357021996615905,
+   0.005076142131979695,
+   0.01015228426395939
+  ],
+  "premolar": [
+   0.12471910112359551,
+   0.8449438202247191,
+   0.0011235955056179776,
+   0.029213483146067417
+  ],
+  "1st molar": [
+   0.29347826086956524,
+   0.6123188405797102,
+   0.0036231884057971015,
+   0.09057971014492754
+  ],
+  "2nd molar": [
+   0.1605351170568562,
+   0.8093645484949833,
+   0.0033444816053511705,
+   0.026755852842809364
+  ],
+  "3rd molar": [
+   0.024615384615384615,
+   0.4123076923076923,
+   0.556923076923077,
+   0.006153846153846154
+  ]
+ },
+ "counts": {
+  "incisor": {
+   "Endodontics": 72,
+   "Healthy": 1018,
+   "Impacted": 0,
+   "Implant": 13
+  },
+  "canine": {
+   "Endodontics": 28,
+   "Healthy": 552,
+   "Impacted": 2,
+   "Implant": 5
+  },
+  "premolar": {
+   "Endodontics": 110,
+   "Healthy": 751,
+   "Impacted": 0,
+   "Implant": 25
+  },
+  "1st molar": {
+   "Endodontics": 80,
+   "Healthy": 168,
+   "Impacted": 0,
+   "Implant": 24
+  },
+  "2nd molar": {
+   "Endodontics": 47,
+   "Healthy": 241,
+   "Impacted": 0,
+   "Implant": 7
+  },
+  "3rd molar": {
+   "Endodontics": 7,
+   "Healthy": 133,
+   "Impacted": 180,
+   "Implant": 1
+  }
+ },
+ "source": "lyria patients of splits/train_pool.csv (as eval_prevalence.py)"
+}

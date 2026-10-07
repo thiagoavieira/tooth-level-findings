@@ -1,0 +1,12 @@
+{
+ "n_resamples": 2000,
+ "n_crops": 2065,
+ "rng_seed": 0,
+ "draws_mean": 0.9294844607630939,
+ "draws_std": 0.006934171667620588,
+ "ci95_low": 0.9158186961947921,
+ "ci95_high": 0.9423894987285827,
+ "arch": "inception_v3",
+ "enhancement": "none",
+ "aug": "noaug"
+}

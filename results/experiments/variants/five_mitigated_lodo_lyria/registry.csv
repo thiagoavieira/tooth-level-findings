@@ -1,0 +1,4 @@
+run_id,mode,enhancement,aug,arch,fold,seed,status,batch_size,start_ts,end_ts,epochs_run,best_val_macro_f1,test_macro_f1,peak_vram_MB,error
+none__noaug__deit_small_patch16_224__seed0,test,none,noaug,deit_small_patch16_224,-1,0,done,64,2026-10-02 15:08:46,2026-10-02 15:10:23,30,0.9406,0.8646,2599.7,
+none__noaug__deit_small_patch16_224__seed1,test,none,noaug,deit_small_patch16_224,-1,1,done,64,2026-10-02 15:10:23,2026-10-02 15:11:37,23,0.9476,0.8437,2601.8,
+none__noaug__deit_small_patch16_224__seed2,test,none,noaug,deit_small_patch16_224,-1,2,done,64,2026-10-02 15:11:37,2026-10-02 15:13:04,27,0.9877,0.8567,2601.8,

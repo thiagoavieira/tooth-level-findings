@@ -1,0 +1,28 @@
+{
+ "test_patients": 586,
+ "annotated_teeth": 15053,
+ "in_label_space": {
+  "Healthy": 7572,
+  "Impacted": 133,
+  "Endodontics": 912,
+  "Implant": 18
+ },
+ "excluded": 6418,
+ "excluded_share": 0.4264,
+ "excluded_with_state": {
+  "R": 4919,
+  "C": 682,
+  "De": 533,
+  "Di": 240,
+  "M3f": 145,
+  "P": 101,
+  "Rr": 98,
+  "Dc": 78,
+  "Me": 46,
+  "CpuM": 16,
+  "H": 13,
+  "Mne": 7,
+  "Ri": 3,
+  "RiM": 3
+ }
+}

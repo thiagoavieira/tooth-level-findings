@@ -1,0 +1,61 @@
+{
+ "train_sources": [
+  "lyria"
+ ],
+ "test_sources": [
+  "lyria"
+ ],
+ "classes": [
+  "Endodontics",
+  "Healthy",
+  "Impacted",
+  "Implant",
+  "Restored"
+ ],
+ "cap": 180,
+ "seed": 0,
+ "fill": {
+  "class": "Implant",
+  "sources": [
+   "dentex",
+   "tufts"
+  ]
+ },
+ "below_cap": {},
+ "train_pool": {
+  "Healthy": 180,
+  "Impacted": 180,
+  "Implant": 180,
+  "Restored": 180,
+  "Endodontics": 180
+ },
+ "train_pool_by_source": {
+  "dentex|Implant": 30,
+  "lyria|Endodontics": 180,
+  "lyria|Healthy": 180,
+  "lyria|Impacted": 180,
+  "lyria|Implant": 43,
+  "lyria|Restored": 180,
+  "tufts|Implant": 107
+ },
+ "test": {
+  "Impacted": 133,
+  "Endodontics": 914,
+  "Implant": 18,
+  "Healthy": 983,
+  "Restored": 969
+ },
+ "test_by_source": {
+  "lyria": 3017
+ },
+ "train_groups": 267,
+ "test_groups": 606,
+ "frozen_excluded": 162,
+ "fold_val_sizes": {
+  "0": 179,
+  "1": 178,
+  "2": 196,
+  "3": 181,
+  "4": 166
+ }
+}

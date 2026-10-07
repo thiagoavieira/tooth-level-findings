@@ -1,0 +1,63 @@
+{
+ "run_id": "none__aug__inception_v3__seed2",
+ "mode": "test",
+ "enhancement": "none",
+ "aug": "aug",
+ "arch": "inception_v3",
+ "fold": -1,
+ "seed": 2,
+ "batch_size": 32,
+ "best_val_macro_f1": 0.9737627237627238,
+ "val_metrics": {
+  "accuracy": 0.9722222222222222,
+  "macro_f1": 0.9737627237627238,
+  "per_class": {
+   "Endodontics": {
+    "precision": 0.9473684210526315,
+    "recall": 1.0,
+    "f1": 0.972972972972973
+   },
+   "Healthy": {
+    "precision": 0.9411764705882353,
+    "recall": 1.0,
+    "f1": 0.9696969696969697
+   },
+   "Impacted": {
+    "precision": 1.0,
+    "recall": 0.9090909090909091,
+    "f1": 0.9523809523809523
+   },
+   "Implant": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   }
+  }
+ },
+ "test_metrics": {
+  "accuracy": 0.9539951573849879,
+  "macro_f1": 0.9121439971606384,
+  "per_class": {
+   "Endodontics": {
+    "precision": 0.9703947368421053,
+    "recall": 0.9703947368421053,
+    "f1": 0.9703947368421053
+   },
+   "Healthy": {
+    "precision": 0.9890230515916575,
+    "recall": 0.933678756476684,
+    "f1": 0.9605543710021321
+   },
+   "Impacted": {
+    "precision": 0.7588235294117647,
+    "recall": 0.9699248120300752,
+    "f1": 0.8514851485148515
+   },
+   "Implant": {
+    "precision": 0.7638888888888888,
+    "recall": 1.0,
+    "f1": 0.8661417322834646
+   }
+  }
+ }
+}

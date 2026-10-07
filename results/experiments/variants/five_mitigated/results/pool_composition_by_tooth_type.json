@@ -1,0 +1,50 @@
+{
+ "clean5_pool_Healthy": {
+  "incisor": 68,
+  "premolar": 47,
+  "canine": 43,
+  "3rd molar": 8,
+  "1st molar": 8,
+  "2nd molar": 6
+ },
+ "mitigated_pool_Healthy": {
+  "3rd molar": 60,
+  "2nd molar": 60,
+  "incisor": 31,
+  "premolar": 14,
+  "canine": 13,
+  "1st molar": 2
+ },
+ "pool_Restored": {
+  "2nd molar": 36,
+  "1st molar": 39,
+  "premolar": 49,
+  "incisor": 36,
+  "3rd molar": 10,
+  "canine": 10
+ },
+ "pool_Endodontics": {
+  "1st molar": 41,
+  "premolar": 57,
+  "2nd molar": 22,
+  "incisor": 45,
+  "canine": 12,
+  "3rd molar": 3
+ },
+ "test_Healthy": {
+  "canine": 252,
+  "incisor": 413,
+  "3rd molar": 44,
+  "2nd molar": 52,
+  "1st molar": 17,
+  "premolar": 205
+ },
+ "test_Restored": {
+  "premolar": 262,
+  "1st molar": 241,
+  "2nd molar": 202,
+  "3rd molar": 59,
+  "canine": 63,
+  "incisor": 142
+ }
+}

@@ -1,0 +1,188 @@
+{
+ "tufts": {
+  "n_radiographs": 1000,
+  "covered_predictions": 21433.000000000015,
+  "coverage_fraction": 0.8946819168475545,
+  "estimated_true_teeth": {
+   "Endodontics": 531.7070780532462,
+   "Healthy": 13093.83838882436,
+   "Impacted": 1011.3767232375315,
+   "Implant": 197.68127629733513
+  },
+  "operating_points": {
+   "Endodontics": {
+    "tau_in_domain": 0.7,
+    "tau_ext_p90": 0.99,
+    "at_p90": {
+     "precision": 0.9111111111111111,
+     "detection_rate": 0.6019243057002399,
+     "flags_per_radiograph": 0.031224137931034485,
+     "kept": 351.27155172413796
+    },
+    "tau_ext_p95": 0.995,
+    "at_p95": {
+     "precision": 0.9655172413793103,
+     "detection_rate": 0.4110702575513836,
+     "flags_per_radiograph": 0.007806034482758621,
+     "kept": 226.37500000000014
+    },
+    "equal_error_like": {
+     "tau": 0.67,
+     "miss_rate": 0.07509192050938807,
+     "false_positive_rate": 0.06906711111127778
+    }
+   },
+   "Healthy": {
+    "tau_in_domain": 0.5,
+    "tau_ext_p90": 0.98,
+    "at_p90": {
+     "precision": 0.9054054054054054,
+     "detection_rate": 0.3649989351514077,
+     "flags_per_radiograph": 0.49932327586206904,
+     "kept": 5278.560344827584
+    },
+    "tau_ext_p95": 0.995,
+    "at_p95": {
+     "precision": 1.0,
+     "detection_rate": 0.010895490601534562,
+     "flags_per_radiograph": 0.0,
+     "kept": 142.66379310344828
+    },
+    "equal_error_like": {
+     "tau": 0.91,
+     "miss_rate": 0.2645543843964179,
+     "false_positive_rate": 0.2651691976013524
+    }
+   },
+   "Impacted": {
+    "tau_in_domain": 0.99,
+    "tau_ext_p90": 0.98,
+    "at_p90": {
+     "precision": 0.955319119935041,
+     "detection_rate": 0.47957319311679214,
+     "flags_per_radiograph": 0.022685121107266434,
+     "kept": 507.71428571428754
+    },
+    "tau_ext_p95": 0.98,
+    "at_p95": {
+     "precision": 0.955319119935041,
+     "detection_rate": 0.47957319311679214,
+     "flags_per_radiograph": 0.022685121107266434,
+     "kept": 507.71428571428754
+    },
+    "equal_error_like": {
+     "tau": 0.3,
+     "miss_rate": 0.07609410199011823,
+     "false_positive_rate": 0.040720713971704126
+    }
+   },
+   "Implant": {
+    "tau_in_domain": 0.5,
+    "tau_ext_p90": 0.999,
+    "at_p90": {
+     "precision": 0.9411764705882354,
+     "detection_rate": 0.4895465840822877,
+     "flags_per_radiograph": 0.006048387096774193,
+     "kept": 102.82258064516151
+    },
+    "tau_ext_p95": null,
+    "equal_error_like": {
+     "tau": 0.49,
+     "miss_rate": 0.0,
+     "false_positive_rate": 0.0028814396297126565
+    }
+   }
+  },
+  "reader_disagreements_excluded": 66
+ },
+ "dentex": {
+  "n_radiographs": 1067,
+  "covered_predictions": 26380.0,
+  "coverage_fraction": 0.8981648564910967,
+  "estimated_true_teeth": {
+   "Endodontics": 1321.400000000003,
+   "Healthy": 18209.476,
+   "Impacted": 1110.4519999999957,
+   "Implant": 75.78
+  },
+  "operating_points": {
+   "Endodontics": {
+    "tau_in_domain": 0.7,
+    "tau_ext_p90": 0.99,
+    "at_p90": {
+     "precision": 0.92,
+     "detection_rate": 0.5326169214469493,
+     "flags_per_radiograph": 0.05735707591377695,
+     "kept": 765.0000000000005
+    },
+    "tau_ext_p95": null,
+    "equal_error_like": {
+     "tau": 0.72,
+     "miss_rate": 0.050552444377175765,
+     "false_positive_rate": 0.050473689671410304
+    }
+   },
+   "Healthy": {
+    "tau_in_domain": 0.5,
+    "tau_ext_p90": 0.99,
+    "at_p90": {
+     "precision": 0.9047619047619048,
+     "detection_rate": 0.17248030640749912,
+     "flags_per_radiograph": 0.30984817244611057,
+     "kept": 3471.3840000000014
+    },
+    "tau_ext_p95": null,
+    "equal_error_like": {
+     "tau": 0.91,
+     "miss_rate": 0.2601502646204643,
+     "false_positive_rate": 0.24278100156122176
+    }
+   },
+   "Impacted": {
+    "tau_in_domain": 0.99,
+    "tau_ext_p90": 0.99,
+    "at_p90": {
+     "precision": 0.9124999999999999,
+     "detection_rate": 0.33526888150050654,
+     "flags_per_radiograph": 0.03345829428303654,
+     "kept": 407.99999999999903
+    },
+    "tau_ext_p95": 0.995,
+    "at_p95": {
+     "precision": 0.9673469387755104,
+     "detection_rate": 0.21769513675512486,
+     "flags_per_radiograph": 0.007647610121836926,
+     "kept": 249.90000000000097
+    },
+    "equal_error_like": {
+     "tau": 0.3,
+     "miss_rate": 0.0744309524409883,
+     "false_positive_rate": 0.03186444015539968
+    }
+   },
+   "Implant": {
+    "tau_in_domain": 0.5,
+    "tau_ext_p90": 0.99,
+    "at_p90": {
+     "precision": 0.9452054794520548,
+     "detection_rate": 0.9105304829770388,
+     "flags_per_radiograph": 0.0037488284910965324,
+     "kept": 73.0
+    },
+    "tau_ext_p95": 0.999,
+    "at_p95": {
+     "precision": 1.0,
+     "detection_rate": 0.2903140670361573,
+     "flags_per_radiograph": 0.0,
+     "kept": 22.0
+    },
+    "equal_error_like": {
+     "tau": 0.37,
+     "miss_rate": 0.0,
+     "false_positive_rate": 0.00722697726828623
+    }
+   }
+  },
+  "reader_disagreements_excluded": 0
+ }
+}

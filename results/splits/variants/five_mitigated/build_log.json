@@ -1,0 +1,167 @@
+{
+ "posneg_indomain": {
+  "train_patients": 195,
+  "candidates": {
+   "3rd molar": 139,
+   "2nd molar": 241,
+   "other": 2506
+  },
+  "chosen_patients": 124,
+  "chosen_by_type": {
+   "3rd molar": 60,
+   "2nd molar": 60,
+   "incisor": 31,
+   "premolar": 14,
+   "1st molar": 2,
+   "canine": 13
+  }
+ },
+ "split_indomain": {
+  "train_pool": {
+   "Endodontics": 180,
+   "Healthy": 180,
+   "Implant": 180,
+   "Impacted": 180,
+   "Restored": 180
+  },
+  "train_pool_by_source": {
+   "dentex|Implant": 30,
+   "lyria|Endodontics": 180,
+   "lyria|Healthy": 180,
+   "lyria|Impacted": 180,
+   "lyria|Implant": 43,
+   "lyria|Restored": 180,
+   "tufts|Implant": 107
+  },
+  "test": {
+   "Impacted": 133,
+   "Endodontics": 914,
+   "Implant": 18,
+   "Healthy": 983,
+   "Restored": 969
+  },
+  "test_by_source": {
+   "lyria": 3017
+  },
+  "train_groups": 264,
+  "test_groups": 606,
+  "fold_val_sizes": {
+   "0": 185,
+   "1": 164,
+   "2": 174,
+   "3": 197,
+   "4": 180
+  },
+  "fold_val_class_min": {
+   "0": 33,
+   "1": 27,
+   "2": 31,
+   "3": 33,
+   "4": 30
+  }
+ },
+ "posneg_lodo_lyria": {
+  "train_patients": 473,
+  "candidates": {
+   "3rd molar": 267,
+   "2nd molar": 470,
+   "other": 5452
+  },
+  "chosen_patients": 158,
+  "chosen_by_type": {
+   "3rd molar": 60,
+   "2nd molar": 60,
+   "premolar": 18,
+   "incisor": 28,
+   "canine": 13,
+   "1st molar": 1
+  }
+ },
+ "split_lodo_lyria": {
+  "train_pool": {
+   "Endodontics": 180,
+   "Impacted": 180,
+   "Healthy": 180,
+   "Restored": 180,
+   "Implant": 93
+  },
+  "train_pool_by_source": {
+   "lyria|Endodontics": 180,
+   "lyria|Healthy": 180,
+   "lyria|Impacted": 180,
+   "lyria|Implant": 93,
+   "lyria|Restored": 180
+  },
+  "test": {
+   "Restored": 449,
+   "Implant": 217,
+   "Impacted": 647,
+   "Healthy": 605,
+   "Endodontics": 203
+  },
+  "test_by_source": {
+   "tufts": 1005,
+   "dentex": 1116
+  },
+  "train_groups": 412,
+  "test_groups": 1160,
+  "fold_val_sizes": {
+   "0": 163,
+   "1": 145,
+   "2": 178,
+   "3": 158,
+   "4": 169
+  },
+  "fold_val_class_min": {
+   "0": 22,
+   "1": 9,
+   "2": 22,
+   "3": 5,
+   "4": 29
+  }
+ },
+ "prior5_patients": 195,
+ "prior4_patients": 193,
+ "sanity_scale1_lyria": {
+  "checked": 300,
+  "mismatch": 0,
+  "max_abs_diff": 0,
+  "examples": []
+ },
+ "sanity_scale1_external": {
+  "checked": 300,
+  "mismatch": 0,
+  "max_abs_diff": 0,
+  "examples": []
+ },
+ "enh_crops_written": 6111,
+ "prevalence_missing_in_crops_prevalence": 0,
+ "prevalence": {
+  "rows": 13591,
+  "by_set_class": {
+   "base|Endodontics": 912,
+   "base|Healthy": 7572,
+   "base|Impacted": 133,
+   "base|Implant": 55,
+   "restored_extra|Restored": 4919
+  },
+  "s1.3_written": 13554,
+  "lyria_patients": 586
+ },
+ "external": {
+  "rows": 2283,
+  "by_source_class": {
+   "dentex|Endodontics": 137,
+   "dentex|Healthy": 388,
+   "dentex|Impacted": 389,
+   "dentex|Implant": 75,
+   "dentex|Restored": 214,
+   "tufts|Endodontics": 81,
+   "tufts|Healthy": 248,
+   "tufts|Impacted": 291,
+   "tufts|Implant": 196,
+   "tufts|Restored": 264
+  },
+  "s1.3_written": 162
+ }
+}

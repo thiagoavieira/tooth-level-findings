@@ -1,0 +1,179 @@
+{
+ "tab_class_distribution": [
+  [
+   {"labels": ["Endo. treated", "InReDD"], "numbers": ["180", "912"]},
+   {"labels": ["Sound", "InReDD"], "numbers": ["180", "965"]},
+   {"labels": ["Impacted", "InReDD"], "numbers": ["180", "133"]},
+   {"labels": ["Implant", "InReDD"], "numbers": ["75", "18"]},
+   {"labels": ["", "DENTEX"], "numbers": ["105", "37"]},
+   {"labels": ["Total", ""], "numbers": ["720", "2065"]}
+  ]
+ ],
+ "tab_cv_ablation": [
+  [
+   {"labels": ["Grayscale", "No augmentation", "InceptionV3"], "numbers": ["98.1", "0.8", "93.0", "1.1"]},
+   {"labels": ["MSTHGR", "No augmentation", "VGG16"], "numbers": ["97.9", "1.3", "92.6", "1.7"]},
+   {"labels": ["Grayscale", "No augmentation", "VGG16"], "numbers": ["97.9", "1.0", "92.9", "1.4"]},
+   {"labels": ["MSTHGR", "Augmented", "VGG16"], "numbers": ["97.7", "1.1", "88.7", "4.6"]},
+   {"labels": ["MSTHGR", "Augmented", "ResNet50V2"], "numbers": ["97.4", "1.1", "91.0", "1.3"]},
+   {"labels": ["MSTHGR+CLAHE", "No augmentation", "InceptionV3"], "numbers": ["97.4", "1.3", "91.5", "1.5"]},
+   {"labels": ["MSTHGR", "Augmented", "InceptionV3"], "numbers": ["97.2", "1.6", "89.5", "0.9"]},
+   {"labels": ["Grayscale", "Augmented", "InceptionV3"], "numbers": ["97.1", "1.0", "87.1", "4.9"]},
+   {"labels": ["MSTHGR+CLAHE", "No augmentation", "VGG16"], "numbers": ["97.0", "1.1", "91.6", "1.7"]},
+   {"labels": ["Grayscale", "No augmentation", "ResNet50V2"], "numbers": ["97.0", "0.9", "91.4", "2.5"]},
+   {"labels": ["MSTHGR+CLAHE", "Augmented", "VGG16"], "numbers": ["96.9", "1.4", "89.5", "2.0"]},
+   {"labels": ["MSTHGR", "No augmentation", "InceptionV3"], "numbers": ["96.9", "1.4", "90.7", "1.0"]},
+   {"labels": ["Grayscale", "Augmented", "VGG16"], "numbers": ["96.8", "0.8", "81.8", "7.6"]},
+   {"labels": ["MSTHGR", "No augmentation", "ResNet50V2"], "numbers": ["96.5", "1.1", "91.2", "0.3"]},
+   {"labels": ["Grayscale", "Augmented", "ResNet50V2"], "numbers": ["96.1", "2.0", "90.2", "2.1"]},
+   {"labels": ["MSTHGR+CLAHE", "Augmented", "ResNet50V2"], "numbers": ["95.6", "2.7", "83.2", "6.6"]},
+   {"labels": ["MSTHGR+CLAHE", "No augmentation", "ResNet50V2"], "numbers": ["95.6", "1.8", "91.1", "0.9"]},
+   {"labels": ["MSTHGR+CLAHE", "Augmented", "InceptionV3"], "numbers": ["94.7", "2.2", "78.7", "4.0"]}
+  ]
+ ],
+ "tab_modern_backbones": [
+  [
+   {"labels": ["ResNet50V2"], "numbers": ["23.5", "97.0", "0.9", "-1.09", "0.004", "91.4", "2.5", "96.5", "94.3", "80.4", "94.6"]},
+   {"labels": ["VGG16"], "numbers": ["134.3", "97.9", "1.0", "-0.14", "1.0", "92.9", "1.4", "96.6", "95.2", "84.5", "95.1"]},
+   {"labels": ["InceptionV3"], "numbers": ["21.8", "98.1", "0.8", "93.0", "1.1", "96.9", "95.8", "84.4", "94.9"]},
+   {"labels": ["ConvNeXt-T"], "numbers": ["27.8", "98.1", "1.0", "0.01", "1.0", "93.9", "1.8", "97.5", "95.8", "84.6", "97.6"]},
+   {"labels": ["EfficientNetV2-S"], "numbers": ["20.2", "95.8", "1.4", "-2.17", "<0.0001", "88.6", "0.8", "93.6", "92.9", "80.4", "87.3"]},
+   {"labels": ["DeiT-S"], "numbers": ["21.7", "98.2", "0.8", "0.11", "1.0", "94.1", "1.3", "97.0", "96.5", "89.2", "93.5"]}
+  ]
+ ],
+ "tab_inference_cost": [
+  [
+   {"labels": ["VGG16"], "numbers": ["2015", "134.3", "537", "144.7", "5.2", "92.9"]},
+   {"labels": ["InceptionV3"], "numbers": ["2016", "21.8", "87", "50.6", "10.0", "93.0"]},
+   {"labels": ["ResNet50V2"], "numbers": ["2016", "23.5", "94", "33.5", "4.3", "91.4"]},
+   {"labels": ["EfficientNetV2-S"], "numbers": ["2021", "20.2", "81", "49.5", "12.4", "88.6"]},
+   {"labels": ["DeiT-S"], "numbers": ["2021", "21.7", "87", "27.5", "4.0", "94.1"]},
+   {"labels": ["ConvNeXt-T"], "numbers": ["2022", "27.8", "111", "34.1", "4.2", "93.9"]}
+  ]
+ ],
+ "tab_test_per_class": [
+  [
+   {"labels": ["Endo. treated"], "numbers": ["98.0", "1.3", "95.9", "0.3", "96.9", "0.8"]},
+   {"labels": ["Sound"], "numbers": ["97.0", "0.7", "94.6", "1.6", "95.8", "0.7"]},
+   {"labels": ["Impacted"], "numbers": ["75.4", "4.5", "96.2", "1.3", "84.5", "2.4"]},
+   {"labels": ["Implant"], "numbers": ["90.3", "4.0", "100.0", "0.0", "94.9", "2.2"]},
+   {"labels": ["Macro-F1"], "numbers": ["93.0", "1.1", "91.6", "94.2"]}
+  ]
+ ],
+ "tab_prevalence": [
+  [
+   {"labels": ["Endo. treated"], "numbers": ["98.0", "1.3", "95.9", "0.3", "96.9", "0.8", "90.2", "5.2", "95.9", "0.3", "92.9", "2.9"]},
+   {"labels": ["Sound"], "numbers": ["97.0", "0.7", "94.6", "1.6", "95.8", "0.7", "99.6", "0.1", "94.9", "2.0", "97.2", "1.0"]},
+   {"labels": ["Impacted"], "numbers": ["75.4", "4.5", "96.2", "1.3", "84.5", "2.4", "31.3", "7.2", "96.2", "1.3", "46.9", "8.0"]},
+   {"labels": ["Implant"], "numbers": ["90.3", "4.0", "100.0", "0.0", "94.9", "2.2", "84.6", "7.1", "100.0", "0.0", "91.5", "4.2"]},
+   {"labels": ["Macro-F1"], "numbers": ["93.0", "1.1", "82.1", "3.5"]}
+  ]
+ ],
+ "tab_fp_by_tooth": [
+  [
+   {"labels": ["Third molar"], "numbers": ["363", "147", "40.5", "35.6", "45.6"]},
+   {"labels": ["Second molar"], "numbers": ["528", "78", "14.8", "12.0", "18.1"]},
+   {"labels": ["First molar"], "numbers": ["356", "11", "3.1", "1.7", "5.4"]},
+   {"labels": ["Premolars"], "numbers": ["1846", "0", "0.0"]},
+   {"labels": ["Canines"], "numbers": ["1613", "0", "0.0"]},
+   {"labels": ["Incisors"], "numbers": ["2866", "1", "0.03"]}
+  ]
+ ],
+ "tab_mitigation": [
+  [
+   {"labels": ["no", "InceptionV3, frozen"], "numbers": ["31.3", "7.2", "96.2", "46.9", "82.1", "3.5", "0.51", "68.1"]},
+   {"labels": ["no", "DeiT-S, frozen"], "numbers": ["38.6", "11.3", "96.5", "54.5", "84.4", "3.4", "0.46", "69.7"]},
+   {"labels": ["no", "InceptionV3, + tooth-position prior"], "numbers": ["41.6", "6.2", "96.0", "57.8", "87.3", "1.3", "0.32", "79.6"]},
+   {"labels": ["no", "InceptionV3, + test-time context 1.3"], "numbers": ["48.9", "6.7", "91.0", "63.3", "84.7", "2.7", "0.46", "66.2"]},
+   {"labels": ["no", "InceptionV3, + context + prior"], "numbers": ["55.2", "7.6", "91.2", "68.4", "88.8", "1.6", "0.27", "78.9"]},
+   {"labels": ["no", "DeiT-S, + tooth-position prior"], "numbers": ["43.7", "8.1", "96.2", "59.8", "87.4", "2.3", "0.30", "80.6"]},
+   {"labels": ["no", "DeiT-S, + test-time context 1.3"], "numbers": ["58.2", "8.1", "93.0", "71.2", "87.3", "2.0", "0.44", "68.7"]},
+   {"labels": ["no", "DeiT-S, + context + prior"], "numbers": ["58.8", "6.6", "94.2", "72.3", "90.2", "2.4", "0.22", "83.1"]},
+   {"labels": ["yes", "InceptionV3, position-aware negatives"], "numbers": ["47.8", "5.8", "92.5", "62.9", "86.3", "2.7", "0.27", "79.9"]},
+   {"labels": ["yes", "\\quad + prior"], "numbers": ["62.1", "5.0", "92.7", "74.3", "91.2", "1.3", "0.16", "87.7"]},
+   {"labels": ["yes", "DeiT-S, position-aware negatives"], "numbers": ["54.4", "7.0", "95.2", "69.1", "89.1", "2.7", "0.27", "78.5"]},
+   {"labels": ["yes", "\\quad + prior"], "numbers": ["65.7", "6.3", "95.0", "77.6", "92.9", "1.1", "0.14", "88.4"]},
+   {"labels": ["yes", "InceptionV3, context in training (control)"], "numbers": ["27.3", "7.1", "98.7", "42.5", "79.6", "2.2", "0.73", "57.4"]},
+   {"labels": ["yes", "DeiT-S, context in training (control)"], "numbers": ["33.0", "5.6", "98.5", "49.2", "84.0", "2.9", "0.55", "64.3"]},
+   {"labels": ["yes", "DeiT-S, negatives + context in training"], "numbers": ["61.9", "2.4", "95.0", "74.9", "90.6", "0.8", "0.24", "80.6"]},
+   {"labels": ["yes", "\\quad + prior"], "numbers": ["70.6", "3.3", "95.0", "80.9", "93.3", "0.6", "0.14", "89.3"]}
+  ]
+ ],
+ "tab_operating": [
+  [
+   {"labels": ["InceptionV3, reference"], "numbers": ["0.51", "68.1", "97.7", "96.9"]},
+   {"labels": [""], "numbers": ["0.70", "0.23", "83.8", "92.5", "94.1"]},
+   {"labels": [""], "numbers": ["0.80", "0.16", "88.2", "91.0", "92.0"]},
+   {"labels": [""], "numbers": ["0.90", "0.11", "91.0", "87.2", "89.1"]},
+   {"labels": [""], "numbers": ["0.95", "0.08", "93.0", "82.7", "86.7"]},
+   {"labels": ["DeiT-S, pos.-aware negatives"], "numbers": ["0.27", "78.5", "96.2", "98.1"]},
+   {"labels": [""], "numbers": ["0.80", "0.12", "89.4", "90.2", "95.7"]},
+   {"labels": [""], "numbers": ["0.90", "0.07", "92.8", "88.0", "93.2"]},
+   {"labels": ["\\quad + prior"], "numbers": ["0.80", "0.07", "93.7", "90.2", "93.4"]},
+   {"labels": [""], "numbers": ["0.90", "0.05", "95.6", "87.2", "89.1"]},
+   {"labels": ["\\quad + enlarged crops and prior"], "numbers": ["0.14", "89.3", "94.7", "94.7"]},
+   {"labels": ["\\tabfocus"], "numbers": ["0.80", "0.07", "94.4", "93.2", "86.1"]},
+   {"labels": [""], "numbers": ["0.90", "0.05", "96.0", "91.0", "81.7"]}
+  ]
+ ],
+ "tab_robustness": [
+  [
+   {"labels": ["Original boxes"], "numbers": ["90.8", "1.3", "96.9", "95.8", "84.5", "86.0"]},
+   {"labels": ["Jitter $\\delta=0.05$"], "numbers": ["90.0", "1.2", "96.9", "95.9", "84.0", "83.4"]},
+   {"labels": ["Jitter $\\delta=0.10$"], "numbers": ["90.0", "2.1", "96.7", "95.5", "82.4", "85.2"]},
+   {"labels": ["Jitter $\\delta=0.20$"], "numbers": ["88.2", "2.3", "95.7", "94.9", "81.3", "80.8"]},
+   {"labels": ["Jitter $\\delta=0.30$"], "numbers": ["82.2", "2.2", "92.3", "92.0", "76.9", "67.5"]},
+   {"labels": ["Scale $s=0.70$ (truncate)"], "numbers": ["77.3", "6.3", "92.5", "92.6", "67.5", "56.5"]},
+   {"labels": ["Scale $s=0.85$"], "numbers": ["87.3", "3.4", "96.0", "94.9", "77.0", "81.2"]},
+   {"labels": ["Scale $s=1.15$ (context)"], "numbers": ["91.1", "0.8", "96.6", "95.6", "87.1", "85.3"]},
+   {"labels": ["Scale $s=1.30$"], "numbers": ["90.6", "1.2", "95.8", "94.9", "88.6", "83.0"]},
+   {"labels": ["Scale $s=1.50$"], "numbers": ["87.3", "2.4", "93.2", "92.3", "83.1", "80.6"]}
+  ],
+  [
+   {"labels": ["Annotated teeth ($n$)"], "numbers": ["912", "965", "133", "18"]},
+   {"labels": ["Detection recall"], "numbers": ["90.1", "94.0", "63.9", "55.6"]},
+   {"labels": ["\\quad 95\\% CI"], "numbers": ["88.0", "91.9", "92.3", "95.3", "55.5", "71.6", "33.7", "75.4"]},
+   {"labels": ["F1, annotated boxes"], "numbers": ["97.6", "96.7", "84.1", "79.8"]},
+   {"labels": ["F1, detected boxes"], "numbers": ["97.3", "96.6", "77.2", "68.7"]},
+   {"labels": ["End-to-end recall"], "numbers": ["86.3", "89.9", "59.1", "55.6"]}
+  ]
+ ],
+ "tab_dentex_impacted": [
+  [
+   {"labels": ["Annotated impacted teeth detected"], "numbers": ["519", "604", "85.9", "82.9", "88.5"]},
+   {"labels": ["Detected ones predicted impacted"], "numbers": ["470", "519", "90.6", "87.7", "92.8"]},
+   {"labels": ["End-to-end recall"], "numbers": ["470", "604", "77.8", "74.3", "80.9"]},
+   {"labels": ["Impacted predictions, total"], "numbers": ["1795"]},
+   {"labels": ["\\quad on an annotated impacted tooth"], "numbers": ["470", "26.2", "24.2", "28.3"]},
+   {"labels": ["\\quad on a tooth with another DENTEX label"], "numbers": ["358"]},
+   {"labels": ["\\quad on a tooth without annotation"], "numbers": ["967"]}
+  ]
+ ],
+ "tab_audit": [
+  [
+   {"labels": ["0.50 to 0.70"], "numbers": ["1351", "29.1", "10.9", "46.6", "1548", "30.9", "14.9", "45.8"]},
+   {"labels": ["0.70 to 0.90"], "numbers": ["4479", "48.5", "36.2", "60.4", "4472", "70.4", "59.6", "79.4"]},
+   {"labels": ["0.90 to 0.99"], "numbers": ["10327", "82.9", "76.7", "88.0", "13433", "87.0", "83.0", "90.6"]},
+   {"labels": ["$\\geq 0.99$"], "numbers": ["2965", "96.3", "90.4", "99.5", "4441", "96.5", "92.1", "99.1"]}
+  ]
+ ],
+ "tab_restored": [
+  [
+   {"labels": ["Endo. treated"], "numbers": ["99.4", "99.9", "97.7", "96.8", "98.6", "98.3"]},
+   {"labels": ["Sound"], "numbers": ["98.4", "99.4", "94.5", "85.5", "96.4", "91.9"]},
+   {"labels": ["Impacted"], "numbers": ["70.1", "78.3", "98.5", "97.7", "81.9", "87.0"]},
+   {"labels": ["Implant"], "numbers": ["94.7", "94.7", "100.0", "100.0", "97.3", "97.3"]},
+   {"labels": ["Macro-F1 over the four"], "numbers": ["93.54", "93.62"]}
+  ]
+ ],
+ "tab_lodo": [
+  [
+   {"labels": ["Endo. treated"], "numbers": ["82.5", "88.5", "76.0", "86.3"]},
+   {"labels": ["Sound"], "numbers": ["80.1", "77.8", "77.9", "81.9"]},
+   {"labels": ["Impacted"], "numbers": ["91.5", "95.2", "89.8", "95.2"]},
+   {"labels": ["Implant"], "numbers": ["83.9", "83.3", "95.3", "96.4"]},
+   {"labels": ["Restored"], "numbers": ["70.9", "76.2", "82.0", "87.0"]},
+   {"labels": ["Macro-F1"], "numbers": ["81.8", "2.2", "84.2", "4.7", "84.2", "0.8", "89.4", "0.9"]}
+  ]
+ ]
+}

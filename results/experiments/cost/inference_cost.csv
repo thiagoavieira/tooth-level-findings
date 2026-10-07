@@ -1,0 +1,7 @@
+arch,params_M,model_MB,latency_cpu_ms,latency_gpu_ms,peak_vram_MB
+resnetv2_50,23.51,94.2,31.01,4.4,112.4
+vgg16,134.28,537.1,139.98,4.423,959.5
+inception_v3,21.79,87.3,49.43,9.06,116.1
+convnext_tiny,27.82,111.3,30.85,4.958,137.7
+tf_efficientnetv2_s,20.18,81.3,47.6,11.444,109.2
+deit_small_patch16_224,21.67,86.7,25.5,3.39,101.9

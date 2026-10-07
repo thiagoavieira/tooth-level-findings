@@ -1,0 +1,37 @@
+{
+ "run_id": "msthgr-clahe__aug__vgg16__fold1__seed2",
+ "mode": "cv",
+ "enhancement": "msthgr-clahe",
+ "aug": "aug",
+ "arch": "vgg16",
+ "fold": 1,
+ "seed": 2,
+ "batch_size": 32,
+ "best_val_macro_f1": 0.9751315847867572,
+ "val_metrics": {
+  "accuracy": 0.9784172661870504,
+  "macro_f1": 0.9751315847867572,
+  "per_class": {
+   "Endodontics": {
+    "precision": 0.9523809523809523,
+    "recall": 0.9523809523809523,
+    "f1": 0.9523809523809523
+   },
+   "Healthy": {
+    "precision": 0.9736842105263158,
+    "recall": 1.0,
+    "f1": 0.9866666666666667
+   },
+   "Impacted": {
+    "precision": 1.0,
+    "recall": 0.9772727272727273,
+    "f1": 0.9885057471264368
+   },
+   "Implant": {
+    "precision": 0.972972972972973,
+    "recall": 0.972972972972973,
+    "f1": 0.972972972972973
+   }
+  }
+ }
+}

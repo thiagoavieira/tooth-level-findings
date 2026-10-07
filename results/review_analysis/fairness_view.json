@@ -1,0 +1,96 @@
+{
+ "tufts": {
+  "estimated_true_impacted_among_cropped_teeth": 1011.3767232375315,
+  "table": {
+   "0.5": {
+    "sensitivity_given_detection": 0.9239058980098818,
+    "precision_classifier_only": 0.6727455515431648,
+    "precision_as_deployed": 0.5574872648939974,
+    "end_to_end_sensitivity": null,
+    "end_to_end_sensitivity_in_domain_detector": 0.5903758688283145
+   },
+   "0.7": {
+    "sensitivity_given_detection": 0.8350393570312638,
+    "precision_classifier_only": 0.6984251401986837,
+    "precision_as_deployed": 0.6135274880021347,
+    "end_to_end_sensitivity": null,
+    "end_to_end_sensitivity_in_domain_detector": 0.5335901491429775
+   },
+   "0.8": {
+    "sensitivity_given_detection": 0.775794996378852,
+    "precision_classifier_only": 0.7621748157708955,
+    "precision_as_deployed": 0.6556125143368914,
+    "end_to_end_sensitivity": null,
+    "end_to_end_sensitivity_in_domain_detector": 0.4957330026860864
+   },
+   "0.9": {
+    "sensitivity_given_detection": 0.6869284554002343,
+    "precision_classifier_only": 0.8475210797809845,
+    "precision_as_deployed": 0.7258823204772906,
+    "end_to_end_sensitivity": null,
+    "end_to_end_sensitivity_in_domain_detector": 0.4389472830007497
+   },
+   "0.95": {
+    "sensitivity_given_detection": 0.5980619144216166,
+    "precision_classifier_only": 0.902865810338758,
+    "precision_as_deployed": 0.8093066753793886,
+    "end_to_end_sensitivity": null,
+    "end_to_end_sensitivity_in_domain_detector": 0.382161563315413
+   },
+   "0.99": {
+    "sensitivity_given_detection": 0.2722179308333505,
+    "precision_classifier_only": 0.9816176470588236,
+    "precision_as_deployed": 0.9238754325259518,
+    "end_to_end_sensitivity": null,
+    "end_to_end_sensitivity_in_domain_detector": 0.17394725780251097
+   }
+  }
+ },
+ "dentex": {
+  "estimated_true_impacted_among_cropped_teeth": 1110.4519999999957,
+  "table": {
+   "0.5": {
+    "sensitivity_given_detection": 0.9255690475590117,
+    "precision_classifier_only": 0.6984139927426908,
+    "precision_as_deployed": 0.5787162162162154,
+    "end_to_end_sensitivity": 0.7950638118531911,
+    "end_to_end_sensitivity_in_domain_detector": 0.5914386213902085
+   },
+   "0.7": {
+    "sensitivity_given_detection": 0.7715776998915748,
+    "precision_classifier_only": 0.7987917435811368,
+    "precision_as_deployed": 0.649090909090908,
+    "end_to_end_sensitivity": 0.6627852442068627,
+    "end_to_end_sensitivity_in_domain_detector": 0.4930381502307163
+   },
+   "0.8": {
+    "sensitivity_given_detection": 0.7202472506690958,
+    "precision_classifier_only": 0.8102358375881343,
+    "precision_as_deployed": 0.6631840796019888,
+    "end_to_end_sensitivity": 0.6186923883247533,
+    "end_to_end_sensitivity_in_domain_detector": 0.4602379931775522
+   },
+   "0.9": {
+    "sensitivity_given_detection": 0.6432515768353773,
+    "precision_classifier_only": 0.8181006047278715,
+    "precision_as_deployed": 0.6716502115655838,
+    "end_to_end_sensitivity": 0.552553104501589,
+    "end_to_end_sensitivity_in_domain_detector": 0.4110377575978061
+   },
+   "0.95": {
+    "sensitivity_given_detection": 0.566255903001659,
+    "precision_classifier_only": 0.8606389094193964,
+    "precision_as_deployed": 0.7526032315978441,
+    "end_to_end_sensitivity": 0.48641382067842504,
+    "end_to_end_sensitivity_in_domain_detector": 0.3618375220180601
+   },
+   "0.99": {
+    "sensitivity_given_detection": 0.33526888150050654,
+    "precision_classifier_only": 0.9580052493438319,
+    "precision_as_deployed": 0.9124999999999999,
+    "end_to_end_sensitivity": 0.2879959692089351,
+    "end_to_end_sensitivity_in_domain_detector": 0.21423681527882368
+   }
+  }
+ }
+}
