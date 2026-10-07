@@ -1,7 +1,7 @@
 # Tooth-level findings on panoramic radiographs
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](pyproject.toml)
-[![DOI](https://img.shields.io/badge/DOI-to%20be%20assigned-lightgrey)](#citation)
+[![DOI](https://img.shields.io/badge/DOI-10.6084%2Fm9.figshare.34184247-blue)](https://doi.org/10.6084/m9.figshare.34184247)
 [![Code license: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE)
 [![Results license: CC BY 4.0](https://img.shields.io/badge/results-CC%20BY%204.0-green)](results/LICENSE)
 
@@ -125,8 +125,10 @@ If you use this code or these results, please cite the dissertation and the data
   title   = {tooth-level-findings: code and results for leakage-safe tooth-level classification of radiographic findings in panoramic radiographs},
   author  = {{Alves Vieira de Matos}, Thiago and {Alaniz Macedo}, Alessandra},
   year    = {2026},
-  version = {1.0.0},
-  url     = {https://github.com/thiagoavieira/tooth-level-findings}
+  version = {1.0.1},
+  publisher = {figshare},
+  doi     = {10.6084/m9.figshare.34184247},
+  url     = {https://doi.org/10.6084/m9.figshare.34184247}
 }
 
 @mastersthesis{matos2026dissertation,

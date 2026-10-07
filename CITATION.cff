@@ -10,7 +10,8 @@ authors:
     given-names: "Alessandra"
     orcid: "https://orcid.org/0000-0001-5271-3086"
     affiliation: "Department of Computing and Mathematics, FFCLRP, University of São Paulo"
-version: "1.0.0"
+version: "1.0.1"
+doi: "10.6084/m9.figshare.34184247"
 date-released: "2026-10-07"
 repository-code: "https://github.com/thiagoavieira/tooth-level-findings"
 type: software

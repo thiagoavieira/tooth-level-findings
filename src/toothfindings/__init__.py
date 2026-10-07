@@ -12,4 +12,4 @@ audit       expert-review analysis
 reporting   tables and figures recomputed from ``results/``
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"

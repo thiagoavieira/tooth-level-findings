@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "toothfindings"
-version = "1.0.0"
+version = "1.0.1"
 description = "Tooth-level classification of implants, endodontically treated, impacted and sound teeth on panoramic radiographs: research code and exported results."
 readme = "README.md"
 requires-python = ">=3.10"
