@@ -1,12 +1,24 @@
 cff-version: 1.2.0
 message: "If you use this code or these results, please cite them as below."
-title: "TITLE PLACEHOLDER: tooth-level findings on panoramic radiographs (code and results)"
+title: "tooth-level-findings: code and results for leakage-safe tooth-level classification of radiographic findings in panoramic radiographs"
 authors:
-  - family-names: "FAMILY NAME PLACEHOLDER"
-    given-names: "GIVEN NAMES PLACEHOLDER"
+  - family-names: "Alves Vieira de Matos"
+    given-names: "Thiago"
+    orcid: "https://orcid.org/0009-0002-3525-9488"
     affiliation: "PPGCA, FFCLRP, University of São Paulo"
+  - family-names: "Alaniz Macedo"
+    given-names: "Alessandra"
+    orcid: "https://orcid.org/0000-0001-5271-3086"
+    affiliation: "Department of Computing and Mathematics, FFCLRP, University of São Paulo"
 version: "1.0.0"
-doi: "10.0000/PLACEHOLDER"
-repository-code: "https://github.com/OWNER/REPOSITORY"
+date-released: "2026-10-07"
+repository-code: "https://github.com/thiagoavieira/tooth-level-findings"
 type: software
 license: MIT
+keywords:
+  - panoramic radiograph
+  - dental radiography
+  - deep learning
+  - tooth-level classification
+  - leakage-safe evaluation
+  - reproducibility

@@ -7,7 +7,7 @@
 
 Code and released results for the tooth-level classification of **implants**, **endodontically
 treated teeth**, **impacted teeth** and **sound teeth** on panoramic radiographs, from the MSc
-dissertation *[title to be filled in]* (PPGCA, FFCLRP, University of São Paulo).
+dissertation *Deep learning for multimodal analysis of dental radiographs: a decision-support platform* (PPGCA, FFCLRP, University of São Paulo).
 
 ## Summary
 
@@ -121,12 +121,19 @@ If you use this code or these results, please cite the dissertation and the data
 (`CITATION.cff` holds the software entry).
 
 ```bibtex
-@mastersthesis{toothfindings,
-  title  = {[title to be filled in]},
-  author = {[author to be filled in]},
+@software{toothfindings,
+  title   = {tooth-level-findings: code and results for leakage-safe tooth-level classification of radiographic findings in panoramic radiographs},
+  author  = {{Alves Vieira de Matos}, Thiago and {Alaniz Macedo}, Alessandra},
+  year    = {2026},
+  version = {1.0.0},
+  url     = {https://github.com/thiagoavieira/tooth-level-findings}
+}
+
+@mastersthesis{matos2026dissertation,
+  title  = {Deep learning for multimodal analysis of dental radiographs: a decision-support platform},
+  author = {{Alves Vieira de Matos}, Thiago},
   school = {University of S{\~a}o Paulo, FFCLRP, PPGCA},
-  year   = {[year]},
-  doi    = {[DOI to be assigned]}
+  year   = {2026}
 }
 
 @misc{inredd_pan924,
@@ -167,6 +174,10 @@ If you use this code or these results, please cite the dissertation and the data
 
 PhysioNet also asks for its standard citation: Goldberger A, et al. PhysioBank, PhysioToolkit,
 and PhysioNet. *Circulation* 101(23):e215–e220, 2000.
+
+## Funding
+
+This work was supported by CNPq (grant 133030/2025-3) and FAPESP (grant 2024/15912-0).
 
 ## License
 
